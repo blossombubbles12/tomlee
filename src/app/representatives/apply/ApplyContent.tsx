@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Input } from "@/modules/shared/components/forms/Input";
-import { Select } from "@/modules/shared/components/forms/Select";
+import { ComboBox } from "@/modules/shared/components/forms/ComboBox";
 import { Textarea } from "@/modules/shared/components/forms/Textarea";
 import { FileUpload } from "@/modules/shared/components/forms/FileUpload";
 import { useForm } from "@/modules/shared/hooks/useForm";
@@ -92,7 +92,7 @@ export default function ApplyContent() {
                 <Input label="Phone Number" name="phone" value={form.values.phone} onChange={form.handleChange} error={form.errors.phone} required />
                 <Input label="Email Address" name="email" type="email" value={form.values.email} onChange={form.handleChange} error={form.errors.email} required />
                 <Input label="Occupation" name="occupation" value={form.values.occupation} onChange={form.handleChange} />
-                <Select label="Select Institution" name="organisation" value={form.values.organisation} onChange={form.handleChange} options={INSTITUTIONS} placeholder="Choose your institution..." required />
+                <ComboBox label="Select Institution" name="organisation" value={form.values.organisation} onChange={(val) => form.setFieldValue("organisation", val)} options={INSTITUTIONS} placeholder="Choose your institution..." error={form.errors.organisation} required />
                 <Input label="LinkedIn Profile" name="linkedin" value={form.values.linkedin} onChange={form.handleChange} placeholder="https://linkedin.com/in/..." />
               </div>
 
