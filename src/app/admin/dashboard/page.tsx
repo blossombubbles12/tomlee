@@ -6,11 +6,6 @@ import { desc } from "drizzle-orm";
 import {
   Users,
   Globe,
-  GraduationCap,
-  DollarSign,
-  Briefcase,
-  Clock,
-  Handshake,
   ArrowRight,
   ArrowUpRight,
   ArrowDownRight,
@@ -32,10 +27,7 @@ export default async function OverviewPage() {
     db.select().from(representativeApplications).orderBy(desc(representativeApplications.createdAt)).limit(100),
   ]);
 
-  const pendingApps = allRepApps.filter((a) => a.status === "pending").length;
-  const approvedApps = allRepApps.filter((a) => a.status === "approved").length;
   const uniqueCountries = [...new Set(allRepApps.map((a) => a.country))].length;
-  const consultingLeads = allEnquiries.filter((e) => e.type === "corporate-training" || e.type === "get-started").length;
 
   const countriesMap = new Map<string, number>();
   allRepApps.forEach((a) => {
@@ -119,56 +111,6 @@ export default async function OverviewPage() {
       trendLabel: "vs last month",
       trendValues,
     },
-    {
-      label: "Students Recruited",
-      value: `${allRepApps.length > 0 ? Math.floor(allRepApps.length * 3.2) : 0}`,
-      icon: GraduationCap,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
-      trend: 15,
-      trendLabel: "vs last month",
-      trendValues: [8, 12, 10, 18, 22, 20, 30],
-    },
-    {
-      label: "Revenue Generated",
-      value: allRepApps.length > 0 ? `$${(allRepApps.length * 1250).toLocaleString()}` : "$0",
-      icon: DollarSign,
-      color: "text-emerald-600",
-      bgColor: "bg-emerald-50",
-      trend: 23,
-      trendLabel: "vs last month",
-      trendValues: [15000, 22000, 18000, 28000, 35000, 32000, 42000],
-    },
-    {
-      label: "Consulting Leads",
-      value: consultingLeads.toString(),
-      icon: Briefcase,
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
-      trend: consultingLeads > 0 ? -5 : 0,
-      trendLabel: "vs last month",
-      trendValues,
-    },
-    {
-      label: "Pending Commissions",
-      value: `$${pendingApps > 0 ? (pendingApps * 450).toLocaleString() : "0"}`,
-      icon: Clock,
-      color: "text-amber-600",
-      bgColor: "bg-amber-50",
-      trend: pendingApps > 0 ? 7 : 0,
-      trendLabel: "vs last month",
-      trendValues,
-    },
-    {
-      label: "Partnerships Created",
-      value: approvedApps.toString(),
-      icon: Handshake,
-      color: "text-cyan-600",
-      bgColor: "bg-cyan-50",
-      trend: approvedApps > 0 ? 10 : 0,
-      trendLabel: "vs last month",
-      trendValues,
-    },
   ];
 
   return (
@@ -188,7 +130,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md">
         {kpis.map((kpi) => {
           const Icon = kpi.icon;
           const isUp = kpi.trend >= 0;
@@ -266,89 +208,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Analytics Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Revenue Overview */}
-        <div className="dashboard-card rounded-xl overflow-hidden">
-          <div className="flex items-center justify-between px-5 py-4 border-b border-secondary/5">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center">
-                <DollarSign size={18} className="text-emerald-600" />
-              </div>
-              <h3 className="text-sm font-heading font-bold text-text">Revenue</h3>
-            </div>
-            <span className="text-[11px] text-success font-semibold flex items-center gap-0.5">
-              <ArrowUpRight size={12} /> 23%
-            </span>
-          </div>
-          <div className="p-5">
-            <p className="text-2xl font-heading font-bold text-text">
-              ${allRepApps.length > 0 ? (allRepApps.length * 1250).toLocaleString() : "0"}
-            </p>
-            <p className="text-[11px] text-text/40 mt-1">Total revenue generated</p>
-            <div className="mt-4 space-y-3">
-              <div>
-                <div className="flex justify-between text-xs mb-1">
-                  <span className="text-text/60">Commission Pool</span>
-                  <span className="font-semibold text-text">
-                    ${allRepApps.length > 0 ? Math.floor(allRepApps.length * 375).toLocaleString() : "0"}
-                  </span>
-                </div>
-                <div className="w-full h-2 bg-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-primary rounded-full" style={{ width: `${Math.min(100, allRepApps.length * 8)}%` }} />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-xs mb-1">
-                  <span className="text-text/60">Paid Out</span>
-                  <span className="font-semibold text-text">
-                    ${approvedApps > 0 ? Math.floor(approvedApps * 875).toLocaleString() : "0"}
-                  </span>
-                </div>
-                <div className="w-full h-2 bg-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-success rounded-full" style={{ width: `${Math.min(100, approvedApps * 10)}%` }} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Enrollment Overview */}
-        <div className="dashboard-card rounded-xl overflow-hidden">
-          <div className="flex items-center justify-between px-5 py-4 border-b border-secondary/5">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center">
-                <GraduationCap size={18} className="text-blue-600" />
-              </div>
-              <h3 className="text-sm font-heading font-bold text-text">Enrollments</h3>
-            </div>
-            <span className="text-[11px] text-success font-semibold flex items-center gap-0.5">
-              <ArrowUpRight size={12} /> 15%
-            </span>
-          </div>
-          <div className="p-5">
-            <p className="text-2xl font-heading font-bold text-text">
-              {allRepApps.length > 0 ? Math.floor(allRepApps.length * 3.2).toLocaleString() : "0"}
-            </p>
-            <p className="text-[11px] text-text/40 mt-1">Students enrolled</p>
-            <div className="mt-4 h-20 flex items-end gap-1">
-              {([8, 12, 10, 18, 22, 20, 30] as number[]).map((v, i) => (
-                <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                  <div
-                    className="w-full bg-primary/20 rounded-t"
-                    style={{ height: `${(v / 30) * 100}%` }}
-                  >
-                    <div
-                      className="w-full bg-primary rounded-t transition-all duration-500"
-                      style={{ height: `${(v / 30) * 70}%` }}
-                    />
-                  </div>
-                  <span className="text-[8px] text-text/30">W{i + 1}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
+      <div className="grid grid-cols-1 gap-6">
         {/* Country Performance */}
         <div className="dashboard-card rounded-xl overflow-hidden">
           <div className="flex items-center justify-between px-5 py-4 border-b border-secondary/5">

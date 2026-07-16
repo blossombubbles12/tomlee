@@ -4,8 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard, Mail, FileText, Globe, BarChart3, Settings, LogOut,
-  ExternalLink, Menu, X, Users, GraduationCap, DollarSign, Handshake,
-  Briefcase, TrendingUp,
+  ExternalLink, Menu, X, Users,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -31,21 +30,6 @@ const NAV_GROUPS: NavGroup[] = [
       { href: "/admin/dashboard/enquiries", label: "Enquiries", icon: Mail },
       { href: "/admin/dashboard/applications", label: "Applications", icon: FileText },
       { href: "/admin/dashboard/representatives", label: "Representatives", icon: Users },
-    ],
-  },
-  {
-    label: "Operations",
-    items: [
-      { href: "/admin/dashboard/students", label: "Students", icon: GraduationCap },
-      { href: "/admin/dashboard/payments", label: "Payments", icon: DollarSign },
-      { href: "/admin/dashboard/commissions", label: "Commissions", icon: TrendingUp },
-    ],
-  },
-  {
-    label: "Growth",
-    items: [
-      { href: "/admin/dashboard/leads", label: "Consulting Leads", icon: Briefcase },
-      { href: "/admin/dashboard/partnerships", label: "Partnerships", icon: Handshake },
     ],
   },
   {
