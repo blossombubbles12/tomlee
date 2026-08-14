@@ -20,7 +20,7 @@ export default function WhatWeDo() {
           >
             <div className="relative aspect-square rounded-[2.5rem] border-[6px] border-white overflow-hidden shadow-card">
               <Image
-                src="https://images.unsplash.com/photo-1595475884562-073c30d45670?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
+                src="/images/editorial1.png"
                 alt="Caregiver sharing a warm companionship moment with a senior at home"
                 fill
                 className="object-cover"

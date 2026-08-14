@@ -54,7 +54,7 @@ export default function WhoWeAre() {
           >
             <div className="relative aspect-square rounded-[2.5rem] border-[6px] border-white overflow-hidden shadow-card">
               <Image
-                src="https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
+                src="/images/editorial2.png"
                 alt="Caregiver warmly supporting an elderly woman at home"
                 fill
                 className="object-cover"
