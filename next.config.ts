@@ -19,9 +19,6 @@ const nextConfig: NextConfig = {
       { source: "/contact-us",  destination: "/contact",  permanent: true },
     ];
   },
-  experimental: {
-    turbo: false,
-  },
 };
 
 export default nextConfig;
