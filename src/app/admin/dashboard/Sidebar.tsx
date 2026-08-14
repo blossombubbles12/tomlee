@@ -59,8 +59,8 @@ export default function Sidebar({ userName, userEmail, userRole }: SidebarProps)
             <Globe size={16} className="text-white" />
           </div>
           <div>
-            <span className="text-white font-heading font-bold text-sm tracking-wide block leading-tight">WorldImpact</span>
-            <span className="text-[10px] text-white/40 font-medium">Admin Panel</span>
+            <span className="text-white font-heading font-bold text-sm tracking-wide block leading-tight">Tomlee</span>
+            <span className="text-[10px] text-white/40 font-medium">Home Care Admin</span>
           </div>
         </Link>
       </div>
@@ -138,7 +138,7 @@ export default function Sidebar({ userName, userEmail, userRole }: SidebarProps)
           <div className="w-7 h-7 rounded-lg gradient-accent flex items-center justify-center">
             <Globe size={13} className="text-white" />
           </div>
-          <span className="text-white font-heading font-bold text-sm tracking-wide">WorldImpact</span>
+          <span className="text-white font-heading font-bold text-sm tracking-wide">Tomlee</span>
         </div>
       </div>
 

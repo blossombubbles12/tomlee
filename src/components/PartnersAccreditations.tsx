@@ -5,70 +5,73 @@ import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
 const PARTNERS = [
-  "Corporate Organisations & Enterprise Businesses",
-  "Government Ministries, Agencies & Public Institutions",
-  "Non-Governmental & Development Organisations",
-  "Academic & Training Institutions",
-  "Industry & Professional Bodies",
+  "Hospitals & Specialist Clinics",
+  "Elderly Care Facilities & Retirement Homes",
+  "Families & Private Households",
+  "NGOs & Community Health Organisations",
+  "Corporate & Insurance Care Programmes",
 ];
 
 const STANDARDS = [
-  "Industry-relevant training delivery",
-  "Competency-based assessment systems",
-  "Standardised certification processes",
-  "Quality-driven learning outcomes",
+  "Rigorous caregiver vetting & background checks",
+  "Structured training and care protocols",
+  "Individualised, family-reviewed care plans",
+  "Quality-checked care outcomes",
 ];
 
 export default function PartnersAccreditations() {
   return (
-    <section className="py-12 md:py-20 lg:py-24 bg-white">
+    <section className="py-20 md:py-28 lg:py-32 bg-background">
       <div className="container mx-auto">
         {/* Header with image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-8 h-[2px] bg-primary" />
-              <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Partners & Accreditations</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text leading-tight mb-4">
-              A Trusted Network Across <span className="text-secondary">Africa</span>
+            <span className="type-label inline-flex items-center rounded-full bg-tint text-secondary px-4 py-1.5 mb-6">
+              Partners &amp; Care Network
+            </span>
+            <h2 className="type-h2 text-secondary mb-4">
+              A Trusted Care Network, <span className="text-primary-dark">Family-First</span>
             </h2>
-            <p className="text-text/70 text-base leading-relaxed max-w-lg">
-              World Impact Africa collaborates with a wide network of stakeholders across Africa&apos;s workforce ecosystem, operating in alignment with recognised workforce development standards.
+            <p className="type-body text-muted max-w-lg">
+              Tomlee Home Care works alongside healthcare providers, community organisations, and families to deliver consistent, high-quality home care that people can rely on.
             </p>
           </div>
-          <div className="relative h-56 overflow-hidden">
+          <div className="relative h-56 rounded-[1.75rem] overflow-hidden shadow-card">
             <Image
-              src="https://images.unsplash.com/photo-1528901166007-3784c7dd3653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
-              alt="Partnership network — professional working on laptop"
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+              alt="Professional caregiver supporting a client"
               fill
               className="object-cover"
               sizes="(max-width:1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-primary/15" />
+            <div className="absolute inset-0 bg-gradient-to-t from-secondary/25 to-transparent" />
           </div>
         </div>
 
         {/* Partner & standards lists */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h3 className="text-lg font-heading font-bold text-text mb-6">Our Partners Include</h3>
+            <h3 className="type-h3 text-secondary mb-6">Who We Work With</h3>
             <ul className="space-y-4">
               {PARTNERS.map((p) => (
                 <li key={p} className="flex items-start gap-3">
-                  <CheckCircle size={18} className="text-primary shrink-0 mt-0.5" />
-                  <span className="text-text/85 text-sm leading-relaxed">{p}</span>
+                  <span className="w-6 h-6 rounded-full bg-primary/15 flex items-center justify-center shrink-0 mt-0.5">
+                    <CheckCircle size={14} className="text-primary-dark" />
+                  </span>
+                  <span className="type-small text-muted leading-relaxed">{p}</span>
                 </li>
               ))}
             </ul>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }}>
-            <h3 className="text-lg font-heading font-bold text-text mb-6">Our Credibility & Standards</h3>
+            <h3 className="type-h3 text-secondary mb-6">Our Care Standards</h3>
             <ul className="space-y-4">
               {STANDARDS.map((s) => (
                 <li key={s} className="flex items-start gap-3">
-                  <CheckCircle size={18} className="text-secondary shrink-0 mt-0.5" />
-                  <span className="text-text/85 text-sm leading-relaxed">{s}</span>
+                  <span className="w-6 h-6 rounded-full bg-tint flex items-center justify-center shrink-0 mt-0.5">
+                    <CheckCircle size={14} className="text-secondary" />
+                  </span>
+                  <span className="type-small text-muted leading-relaxed">{s}</span>
                 </li>
               ))}
             </ul>

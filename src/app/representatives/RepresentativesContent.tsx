@@ -11,42 +11,42 @@ function img(images: string[], idx: number): string {
 }
 
 const WHO_CAN_APPLY = [
-  "Professionals", "Consultants", "Trainers",
+  "Professionals", "Consultants", "Care Professionals",
   "Business Development Professionals", "Entrepreneurs",
-  "University Lecturers", "Professional Associations",
-  "Training Organizations", "Corporate Service Providers",
+  "Healthcare Professionals", "Professional Associations",
+  "Home Care Agencies", "Corporate Service Providers",
 ];
 
 const OPPORTUNITIES = [
-  "Student Recruitment", "Professional Membership Growth",
-  "Corporate Training Opportunities", "ISO Consulting Opportunities",
-  "Audit Projects", "Business Partnerships", "Brand Awareness Activities",
+  "Care Professional Referrals", "Family & Client Coordination",
+  "Home Care Service Opportunities", "Care Consulting Opportunities",
+  "Quality Assurance Projects", "Business Partnerships", "Brand Awareness Activities",
 ];
 
 const INSTITUTIONS = [
-  "Global Institute of Internal Auditing (GIIA)",
-  "Global Leadership Institute (GLI)",
-  "Global Institute of Human Capital & HR",
-  "Global Institute of Management",
-  "Kids & Teens University (KTU)",
-  "WorldImpact Consulting",
-  "Other current and future WorldImpact brands",
+  "Personal Care Services",
+  "Companionship & Social Support",
+  "Home Nursing Services",
+  "Senior Care & Assisted Living",
+  "Specialized Care Programs",
+  "Tomlee Home Care Consulting",
+  "Other current and future Tomlee Home Care services",
 ];
 
 const COMMISSION_TRAINING = [
-  { range: "1–10 Students", rate: "20%" },
-  { range: "11–20 Students", rate: "25%" },
-  { range: "21–30 Students", rate: "30%" },
-  { range: "31–50 Students", rate: "35%" },
-  { range: "51+ Students", rate: "40%" },
+  { range: "1–10 Clients", rate: "20%" },
+  { range: "11–20 Clients", rate: "25%" },
+  { range: "21–30 Clients", rate: "30%" },
+  { range: "31–50 Clients", rate: "35%" },
+  { range: "51+ Clients", rate: "40%" },
 ];
 
 export default function RepresentativesContent({ images }: { images: string[] }) {
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
-        title="Global Representative Network"
-        subtitle="Policy, Guidelines, Terms & Operating Framework"
+        title="Care Professional Network"
+        subtitle="Independent care professionals who refer families, coordinate home care assignments, and earn commissions"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Representatives" }]}
       />
 
@@ -64,23 +64,23 @@ export default function RepresentativesContent({ images }: { images: string[] })
                 <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Version 1.0</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text mb-6">
-                Global Representative Network
+                Care Professional Network
               </h2>
               <p className="text-text/80 text-base leading-relaxed mb-4">
-                The WorldImpact Global Representative Network is established to expand the reach of WorldImpact Schools,
-                Institutes, Consulting Services, Membership Programs, Certification Programs, and Professional Development
-                Initiatives across Africa and other regions.
+                The Care Professional Network is established by Tomlee Home Care to expand the reach of home care
+                services, care coordination, professional care referrals, and family support initiatives across Nigeria
+                and other regions.
               </p>
               <p className="text-text/80 text-base leading-relaxed mb-4">
-                Representatives serve as official ambassadors and business development partners of WorldImpact within their
-                assigned countries or territories.
+                Representatives serve as official ambassadors and business development partners of Tomlee Home Care within
+                their assigned cities or territories.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
                 {[
-                  "Increase student enrollment",
-                  "Expand professional membership",
-                  "Promote training and certification programs",
-                  "Generate consulting opportunities",
+                  "Increase care professional referrals",
+                  "Expand family and client base",
+                  "Promote home care services",
+                  "Coordinate care assignments",
                   "Build local partnerships",
                   "Strengthen brand awareness",
                   "Support business growth in assigned territories",
@@ -102,7 +102,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
             >
               <Image
                 src={img(images, 0)}
-                alt="WorldImpact representative network"
+                alt="Tomlee Home Care representative network"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -130,7 +130,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                 We Welcome Applications From
               </h2>
               <p className="text-text/80 text-base leading-relaxed mb-6">
-                Our network is open to individuals and organisations who share our commitment to workforce development
+                Our network is open to individuals and organisations who share our commitment to quality home care
                 and professional excellence.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -152,32 +152,32 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <Globe size={40} className="text-primary mb-4" strokeWidth={1.5} />
               <h3 className="text-xl font-heading font-bold text-text mb-4">Global Reach, Local Impact</h3>
               <p className="text-text/80 text-sm leading-relaxed mb-4">
-                Whether you are an individual professional or a large training organisation, we invite you to join our
-                growing network of representatives across Africa and beyond.
+                Whether you are an individual care professional or a large home care organisation, we invite you to join
+                our growing network of representatives across Nigeria and beyond.
               </p>
               <p className="text-text/80 text-sm leading-relaxed">
-                No matter your location or background, if you have the drive to promote world-class professional
-                development opportunities, we want to hear from you.
+                No matter your location or background, if you have the drive to connect families with quality home care
+                services, we want to hear from you.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* ── Institutions Covered ── */}
+      {/* ── Services Covered ── */}
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-4 mb-5">
               <div className="w-8 h-[2px] bg-primary" />
-              <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Institutions</span>
+              <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Services</span>
               <div className="w-8 h-[2px] bg-primary" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text">
-              Institutions Covered
+              Services Covered
             </h2>
             <p className="text-text/80 text-base mt-3 max-w-xl mx-auto">
-              The Representative Network serves all WorldImpact institutions including but not limited to:
+              The Representative Network supports all Tomlee Home Care services including but not limited to:
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -211,7 +211,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <Users size={32} className="text-primary mb-4" strokeWidth={1.5} />
               <h3 className="text-xl font-heading font-bold text-text mb-2">Representative Status</h3>
               <p className="text-text/80 text-sm mb-6">
-                Representatives are independent partners and are not employees of WorldImpact.
+                Representatives are independent partners and are not employees of Tomlee Home Care.
               </p>
               <div className="space-y-6">
                 <div>
@@ -219,7 +219,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                     <CheckCircle size={14} className="text-primary" /> Authorized To
                   </p>
                   <ul className="space-y-2">
-                    {["Promote programs", "Recruit students", "Generate business leads", "Build partnerships", "Organize local activities"].map((i) => (
+                    {["Promote care services", "Refer care professionals", "Generate business leads", "Build partnerships", "Organize local activities"].map((i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-text/85">
                         <CheckCircle size={14} className="text-primary shrink-0 mt-0.5" /> {i}
                       </li>
@@ -231,7 +231,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                     <XCircle size={14} className="text-red-500" /> Not Authorized To
                   </p>
                   <ul className="space-y-2">
-                    {["Modify fees", "Issue certificates", "Sign agreements on behalf of WorldImpact", "Create independent programs using the WorldImpact brand", "Make commitments without written approval"].map((i) => (
+                    {["Modify fees", "Alter care plans", "Sign agreements on behalf of Tomlee Home Care", "Create independent services using the Tomlee Home Care brand", "Make commitments without written approval"].map((i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-text/85">
                         <XCircle size={14} className="text-red-400 shrink-0 mt-0.5" /> {i}
                       </li>
@@ -311,17 +311,17 @@ export default function RepresentativesContent({ images }: { images: string[] })
             >
               <h3 className="text-lg font-heading font-bold text-text mb-5 flex items-center gap-3">
                 <Shield size={20} className="text-primary" strokeWidth={1.5} />
-                Responsibilities of WorldImpact
+                Responsibilities of Tomlee Home Care
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Develop and deliver training programs",
-                  "Conduct examinations",
-                  "Issue certificates",
+                  "Develop and maintain care standards",
+                  "Conduct quality assessments",
+                  "Issue care assignment confirmations",
                   "Provide marketing materials",
-                  "Maintain websites and learning platforms",
+                  "Maintain websites and care coordination platforms",
                   "Provide representative support",
-                  "Verify student registrations",
+                  "Verify care professional registrations",
                   "Manage quality assurance",
                   "Protect the brand",
                   "Process commissions",
@@ -349,7 +349,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                 <div>
                   <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-3">Representatives Shall</p>
                   <ul className="space-y-2">
-                    {["Promote approved programs", "Recruit students", "Generate consulting leads", "Build partnerships", "Participate in meetings", "Submit monthly reports", "Protect the WorldImpact brand", "Maintain professionalism"].map((item) => (
+                    {["Promote approved care services", "Refer care professionals", "Generate care assignment leads", "Build partnerships", "Participate in meetings", "Submit monthly reports", "Protect the Tomlee Home Care brand", "Maintain professionalism"].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-sm text-text/85">
                         <CheckCircle size={14} className="text-primary shrink-0 mt-0.5" /> {item}
                       </li>
@@ -359,7 +359,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                 <div>
                   <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-3 text-red-600">Representatives Shall Not</p>
                   <ul className="space-y-2">
-                    {["Misrepresent the organization", "Use unauthorized materials", "Alter logos or certificates", "Make false promises", "Collect fees without reporting"].map((item) => (
+                    {["Misrepresent the organization", "Use unauthorized materials", "Alter logos or care documents", "Make false promises", "Collect fees without reporting"].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-sm text-text/85">
                         <XCircle size={14} className="text-red-400 shrink-0 mt-0.5" /> {item}
                       </li>
@@ -385,8 +385,8 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <Share2 size={28} className="text-primary mb-4" strokeWidth={1.5} />
               <h3 className="text-lg font-heading font-bold text-text mb-4">Social Media Policy</h3>
               <p className="text-text/80 text-sm mb-4">
-                Each country may operate official pages (e.g., GIIA Ghana, GIIA Gambia, GIIA Kenya, WorldImpact Ghana,
-                WorldImpact South Africa).
+                Each city may operate official pages (e.g., Tomlee Lagos, Tomlee Abuja, Tomlee Port Harcourt,
+                Tomlee Ibadan, Tomlee Enugu).
               </p>
               <div className="space-y-4">
                 <div>
@@ -467,7 +467,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                   <div>
                     <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-2 text-red-600">Prohibited:</p>
                     <ul className="space-y-1.5">
-                      {["Logo modifications", "Unapproved certificates", "Unapproved websites", "Unapproved marketing materials"].map((i) => (
+                      {["Logo modifications", "Unapproved care plans", "Unapproved websites", "Unapproved marketing materials"].map((i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-text/85">
                           <XCircle size={12} className="text-red-400 shrink-0 mt-0.5" /> {i}
                         </li>
@@ -487,12 +487,12 @@ export default function RepresentativesContent({ images }: { images: string[] })
         <div className="absolute inset-0 bg-primary/60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-white text-xl md:text-2xl font-heading font-bold text-center px-4">
-            Student Registration &amp; Payment Management
+            Care Assignment &amp; Payment Management
           </p>
         </div>
       </div>
 
-      {/* ── Student Registration Process ── */}
+      {/* ── Care Assignment Process ── */}
       <section className="py-12 md:py-20 lg:py-24 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -502,19 +502,19 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <div className="w-8 h-[2px] bg-primary" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text">
-              Student Registration Process
+              Care Assignment Process
             </h2>
           </div>
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { step: 1, title: "Identify", desc: "Representative identifies prospective student" },
-                { step: 2, title: "Register", desc: "Student completes registration" },
+                { step: 1, title: "Identify", desc: "Representative identifies family care needs" },
+                { step: 2, title: "Register", desc: "Client family completes registration" },
                 { step: 3, title: "Collect Payment", desc: "Payment is collected" },
                 { step: 4, title: "Submit Report", desc: "Representative submits payment report" },
                 { step: 5, title: "Confirm", desc: "Headquarters confirms payment" },
-                { step: 6, title: "Add to Class", desc: "Student is added to the class" },
-                { step: 7, title: "Begin Training", desc: "Training begins" },
+                { step: 6, title: "Add to Care Roster", desc: "Care professional is matched to the family" },
+                { step: 7, title: "Begin Care", desc: "Home care assignment begins" },
               ].map((item, i) => (
                 <motion.div
                   key={item.step}
@@ -566,13 +566,13 @@ export default function RepresentativesContent({ images }: { images: string[] })
                 <CreditCard size={28} className="text-primary mb-4" strokeWidth={1.5} />
                 <h3 className="text-lg font-heading font-bold text-text mb-4">Payment Collection</h3>
                 <p className="text-text/80 text-sm mb-4">
-                  Representatives may collect payments on behalf of WorldImpact subject to strict controls.
+                  Representatives may collect payments on behalf of Tomlee Home Care subject to strict controls.
                 </p>
                 <div className="space-y-4">
                   <div>
                     <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-2">Required Process</p>
                     <ul className="space-y-1.5">
-                      {["All payments must be recorded", "Receipt must be issued", "Student details must be submitted", "Funds must be remitted within 48 hours"].map((i) => (
+                      {["All payments must be recorded", "Receipt must be issued", "Client details must be submitted", "Funds must be remitted within 48 hours"].map((i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-text/85">
                           <CheckCircle size={12} className="text-primary shrink-0 mt-1" /> {i}
                         </li>
@@ -582,7 +582,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
                   <div>
                     <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-2">Required Submission</p>
                     <ul className="space-y-1.5">
-                      {["Student Name", "Program", "Amount Collected", "Date of Payment", "Payment Reference"].map((i) => (
+                      {["Client Name", "Care Service", "Amount Collected", "Date of Payment", "Payment Reference"].map((i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-text/85">
                           <CheckCircle size={12} className="text-primary shrink-0 mt-1" /> {i}
                         </li>
@@ -608,9 +608,9 @@ export default function RepresentativesContent({ images }: { images: string[] })
                   {[
                     { label: "Representative Agreement", desc: "Every representative signs a formal agreement" },
                     { label: "Security Deposit", desc: "Representatives may provide a refundable security deposit (Optional)" },
-                    { label: "Monthly Reconciliation", desc: "Monthly review of students, payments, and commissions" },
-                    { label: "Official Receipts", desc: "Every payment receives a Student Receipt and Headquarters Confirmation" },
-                    { label: "Payment Tracking Portal", desc: "System records all transactions — student name, program, amount" },
+                    { label: "Monthly Reconciliation", desc: "Monthly review of clients, payments, and commissions" },
+                    { label: "Official Receipts", desc: "Every payment receives a Client Receipt and Headquarters Confirmation" },
+                    { label: "Payment Tracking Portal", desc: "System records all transactions — client name, care service, amount" },
                   ].map((item) => (
                     <div key={item.label} className="border-l-2 border-primary pl-4">
                       <p className="text-sm font-heading font-semibold text-text">{item.label}</p>
@@ -667,7 +667,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               className="bg-surface border border-secondary/10 overflow-hidden"
             >
               <div className="bg-primary p-4">
-                <h3 className="text-lg font-heading font-bold text-white text-center">Training &amp; Certification Programs</h3>
+                <h3 className="text-lg font-heading font-bold text-white text-center">Care Service Assignments</h3>
               </div>
               <div className="p-6">
                 {COMMISSION_TRAINING.map((item) => (
@@ -691,10 +691,10 @@ export default function RepresentativesContent({ images }: { images: string[] })
               </div>
               <div className="p-6">
                 {[
-                  { label: "ISO Consulting", rate: "20%" },
-                  { label: "Corporate Training", rate: "20%" },
-                  { label: "Audit Projects", rate: "20%" },
-                  { label: "Certification Leads", rate: "15% – 20%" },
+                  { label: "Care Consulting", rate: "20%" },
+                  { label: "Corporate Wellness Programs", rate: "20%" },
+                  { label: "Quality Assurance Projects", rate: "20%" },
+                  { label: "Care Plan Development", rate: "15% – 20%" },
                 ].map((item) => (
                   <div key={item.label} className="flex justify-between items-center py-3 border-b border-secondary/5 last:border-b-0">
                     <span className="text-text/85 text-sm">{item.label}</span>
@@ -739,7 +739,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               "Marketing materials",
               "Training support",
               "Business development support",
-              "Access to WorldImpact opportunities",
+              "Access to Tomlee Home Care opportunities",
             ].map((item, i) => (
               <motion.div
                 key={item}
@@ -783,10 +783,10 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <div className="space-y-6">
                 <div>
                   <p className="text-xs font-heading font-semibold text-text uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <Users size={14} className="text-primary" /> Student Summary
+                    <Users size={14} className="text-primary" /> Client Summary
                   </p>
                   <ul className="space-y-1.5 pl-4">
-                    {["Number of Students", "Programs Sold", "Revenue Generated"].map((i) => (
+                    {["Number of Clients", "Care Assignments", "Revenue Generated"].map((i) => (
                       <li key={i} className="text-sm text-text/85 list-disc ml-4">{i}</li>
                     ))}
                   </ul>
@@ -831,7 +831,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <h3 className="text-base font-heading font-bold text-text mb-3">Confidentiality</h3>
               <p className="text-text/80 text-xs mb-3">Representatives shall not disclose:</p>
               <ul className="space-y-1.5">
-                {["Student data", "Pricing strategies", "Internal documents", "Financial information", "Proprietary materials"].map((i) => (
+                {["Client data", "Pricing strategies", "Internal documents", "Financial information", "Proprietary materials"].map((i) => (
                   <li key={i} className="flex items-start gap-2 text-xs text-text/85">
                     <XCircle size={11} className="text-red-400 shrink-0 mt-0.5" /> {i}
                   </li>
@@ -858,7 +858,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               </ul>
               <p className="text-text/70 text-xs mt-4">
                 All representatives are expected to operate in a manner that reflects positively on the reputation and
-                values of WorldImpact.
+                values of Tomlee Home Care.
               </p>
             </motion.div>
 
@@ -871,7 +871,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
             >
               <XCircle size={28} className="text-red-500 mb-4" strokeWidth={1.5} />
               <h3 className="text-base font-heading font-bold text-text mb-3">Termination</h3>
-              <p className="text-text/80 text-xs mb-3">WorldImpact reserves the right to terminate for:</p>
+              <p className="text-text/80 text-xs mb-3">Tomlee Home Care reserves the right to terminate for:</p>
               <ul className="space-y-1.5">
                 {["Fraud", "Misrepresentation", "Brand abuse", "Failure to remit funds", "Ethical violations", "Poor performance"].map((i) => (
                   <li key={i} className="flex items-start gap-2 text-xs text-text/85">
@@ -925,7 +925,7 @@ export default function RepresentativesContent({ images }: { images: string[] })
               <div className="mb-8">
                 <label className="block text-xs font-heading font-semibold text-text mb-1.5 uppercase tracking-wide">Areas of Interest</label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {["Student Recruitment", "Corporate Training", "ISO Consulting", "Professional Membership", "Audit Projects", "Business Partnerships"].map((area) => (
+                  {["Care Professional Referrals", "Home Care Services", "Care Coordination Consulting", "Family & Client Support", "Quality Assurance Projects", "Business Partnerships"].map((area) => (
                     <label key={area} className="flex items-center gap-2 cursor-pointer group">
                       <input type="checkbox" className="accent-primary w-4 h-4" />
                       <span className="text-text/85 text-sm group-hover:text-text transition-colors">{area}</span>

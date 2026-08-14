@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#00264D"/>
+  <!-- abstract home + heart mark -->
+  <g fill="none" stroke="#FBA919" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- roof -->
+    <path d="M120 252 L256 128 L392 252"/>
+    <!-- home body -->
+    <path d="M168 252 V376 H344 V252"/>
+    <!-- heart inside the home -->
+    <path d="M256 352 C240 338 226 328 226 314 C226 303 235 296 246 296 C253 296 256 300 256 305 C256 300 259 296 266 296 C277 296 286 303 286 314 C286 328 272 338 256 352 Z"/>
+  </g>
+  <text x="256" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" letter-spacing="8">TOMMY</text>
+</svg>

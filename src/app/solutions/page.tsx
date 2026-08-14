@@ -1,35 +1,35 @@
 import { Metadata } from "next";
 import SolutionsContent from "./SolutionsContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: "Our Solutions",
-  description: "Explore World Impact Africa's integrated workforce development solutions — corporate training, professional certifications, and talent solutions.",
+  title: "Our Services",
+  description: "Explore Tomlee Home Care's integrated care services — personal home care, elderly & companion care, specialist care, and our care professional network.",
   alternates: { canonical: `${base}/solutions` },
   openGraph: {
-    title: "Our Solutions | World Impact Africa",
-    description: "Explore World Impact Africa's integrated workforce development solutions — corporate training, professional certifications, and talent solutions.",
+    title: "Our Services | Tomlee Home Care",
+    description: "Explore Tomlee Home Care's integrated care services — personal home care, elderly & companion care, specialist care, and more.",
     url: `${base}/solutions`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Our Solutions | World Impact Africa",
-    description: "Explore World Impact Africa's workforce development solutions — training, certifications, and talent.",
-    images: ["/wialogoicon.png"],
+    title: "Our Services | Tomlee Home Care",
+    description: "Explore Tomlee Home Care's integrated care services — home care, companion care, and specialist care.",
+    images: ["/logo.png"],
   },
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "World Impact Africa Solutions",
-  description: "Integrated workforce development solutions including corporate training, professional certifications, and talent solutions.",
-  url: "https://worldimpactafrica.com/solutions",
+  name: "Tomlee Home Care Services",
+  description: "Integrated home care services including personal care, elderly & companion care, specialist care, and our care professional network.",
+  url: "https://tomleehomecare.ng/solutions",
   itemListElement: [
-    { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Corporate Training Solutions", provider: { "@type": "Organization", name: "World Impact Africa" }, description: "Tailored training programmes in leadership, sales, digital skills, customer experience, and HR." } },
-    { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Professional Certification Programs", provider: { "@type": "Organization", name: "World Impact Africa" }, description: "Industry-relevant certifications across business, technology, finance, and leadership." } },
-    { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Talent & Workforce Solutions", provider: { "@type": "Organization", name: "World Impact Africa" }, description: "Graduate training, skills assessment, talent outsourcing, and workforce planning." } },
+    { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Personal Home Care", provider: { "@type": "Organization", name: "Tomlee Home Care" }, description: "Dignified personal care and daily living support delivered in the comfort of home." } },
+    { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Elderly & Companion Care", provider: { "@type": "Organization", name: "Tomlee Home Care" }, description: "Compassionate companion care and elderly support with trained care professionals." } },
+    { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Specialist Care Services", provider: { "@type": "Organization", name: "Tomlee Home Care" }, description: "Specialist care for recovery, dementia support, and chronic condition management." } },
   ],
 };
 

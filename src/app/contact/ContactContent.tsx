@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { submitContactForm } from "@/app/actions";
 
-const IMG_CONTACT = "https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
+const IMG_CONTACT = "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
 
 type FormData = {
   fullName: string;
@@ -107,10 +107,10 @@ export default function ContactContent() {
             <div className="lg:col-span-1">
               {/* Image */}
               <div className="relative h-48 mb-8 overflow-hidden">
-                <Image src={IMG_CONTACT} alt="World Impact Africa team ready to help" fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
+                <Image src={IMG_CONTACT} alt="Tomlee Home Care care team ready to help" fill className="object-cover" sizes="(max-width:1024px) 100vw, 33vw" />
                 <div className="absolute inset-0 bg-secondary/60" />
                 <div className="absolute inset-0 flex items-end p-6">
-                  <p className="text-white text-sm font-heading font-semibold">We&apos;re ready to support your workforce goals.</p>
+                  <p className="text-white text-sm font-heading font-semibold">We&apos;re ready to support your family.</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 mb-5">
@@ -119,15 +119,15 @@ export default function ContactContent() {
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-text mb-4">We&apos;re Ready to Help</h2>
               <p className="text-text/80 text-sm leading-relaxed mb-8">
-                Whether you need corporate training, professional certifications, or talent solutions — our team is ready to support your workforce development needs.
+                Whether you need personal home care, elderly &amp; companion care, or specialist care — our care team is ready to support your loved one.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
                   <div className="w-9 h-9 bg-primary/10 flex items-center justify-center shrink-0">
                     <Mail size={16} className="text-primary" />
                   </div>
-                  <a href="mailto:info@worldimpactafrica.com" className="text-sm text-text/85 hover:text-primary transition-colors">
-                    info@worldimpactafrica.com
+                  <a href="mailto:info@tomleehomecare.ng" className="text-sm text-text/85 hover:text-primary transition-colors">
+                    info@tomleehomecare.ng
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -165,7 +165,7 @@ export default function ContactContent() {
                   {status === "error" && (
                     <div className="bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
                       Something went wrong. Please try again or email us directly at{" "}
-                      <a href="mailto:info@worldimpactafrica.com" className="underline">info@worldimpactafrica.com</a>.
+                      <a href="mailto:info@tomleehomecare.ng" className="underline">info@tomleehomecare.ng</a>.
                     </div>
                   )}
 
@@ -185,7 +185,7 @@ export default function ContactContent() {
                       </label>
                       <input id="organisation" name="organisation" type="text" value={form.organisation}
                         onChange={handleChange} onBlur={handleBlur}
-                        className={inputClass("organisation")} placeholder="Your organisation (optional)" />
+                        className={inputClass("organisation")} placeholder="Care recipient / family name (optional)" />
                     </div>
                   </div>
 
@@ -217,9 +217,10 @@ export default function ContactContent() {
                       onChange={handleChange} onBlur={handleBlur}
                       className={inputClass("service")}>
                       <option value="">Select a service...</option>
-                      <option value="Corporate Training">Corporate Training</option>
-                      <option value="Professional Certifications">Professional Certifications</option>
-                      <option value="Talent Solutions">Talent Solutions</option>
+                      <option value="Personal Home Care">Personal Home Care</option>
+                      <option value="Elderly & Companion Care">Elderly &amp; Companion Care</option>
+                      <option value="Specialist Care Services">Specialist Care Services</option>
+                      <option value="Care Professional Network">Care Professional Network</option>
                       <option value="General Enquiry">General Enquiry</option>
                     </select>
                     {errors.service && <p className="mt-1 text-xs text-red-500">{errors.service}</p>}
@@ -231,7 +232,7 @@ export default function ContactContent() {
                     </label>
                     <textarea id="message" name="message" rows={5} value={form.message}
                       onChange={handleChange} onBlur={handleBlur}
-                      className={inputClass("message")} placeholder="Tell us about your workforce development needs..." />
+                      className={inputClass("message")} placeholder="Tell us about your loved one's care needs..." />
                     {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message}</p>}
                   </div>
 

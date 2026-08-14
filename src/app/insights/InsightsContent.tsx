@@ -4,13 +4,13 @@ import Image from "next/image";
 import InsightCard from "@/components/InsightCard";
 import { Insight } from "@/lib/insights";
 
-const CATEGORIES = ["Articles", "Research Reports", "Workforce Insights", "Career Guides"];
+const CATEGORIES = ["Articles", "Senior Living Insights", "Home Care Tips", "Caregiver Resources"];
 
 const CATEGORY_IMAGES: Record<string, string> = {
-  "Articles":           "https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-  "Research Reports":   "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-  "Workforce Insights": "https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-  "Career Guides":      "https://images.unsplash.com/photo-1655720357872-ce227e4164ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+  "Articles":            "https://images.unsplash.com/photo-1632910121591-29e2484c0259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+  "Senior Living Insights": "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+  "Home Care Tips":      "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+  "Caregiver Resources": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
 };
 
 interface InsightsContentProps {
@@ -24,7 +24,7 @@ export default function InsightsContent({ insights, isPlaceholder }: InsightsCon
       <div className="container mx-auto">
         {isPlaceholder && (
           <div className="mb-10 px-4 py-3 bg-primary/5 border border-primary/10 text-sm text-text/80">
-            Content coming soon. Check back for the latest articles, research, and workforce insights from World Impact Africa.
+            Content coming soon. Check back for the latest care guides, senior living insights, and home care tips from Tomlee Home Care.
           </div>
         )}
 

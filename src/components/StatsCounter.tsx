@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Professionals Trained" },
-  { value: 50,  suffix: "+", label: "Corporate Clients" },
-  { value: 10,  suffix: "+", label: "Certification Programmes" },
-  { value: 5,   suffix: "+", label: "Years of Impact" },
+  { value: 500, suffix: "+", label: "Lives Supported" },
+  { value: 50,  suffix: "+", label: "Community Partners" },
+  { value: 10,  suffix: "+", label: "Care Programmes" },
+  { value: 5,   suffix: "+", label: "Years of Trust" },
 ];
 
 function useCountUp(target: number, duration = 2000, start = false) {
@@ -44,12 +44,12 @@ function Stat({ value, suffix, label, delay }: { value: number; suffix: string; 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay }}
-      className="flex flex-col items-center text-center border-l-2 border-secondary/30 pl-4 md:pl-6"
+      className="flex flex-col items-center text-center border-l-2 border-primary/30 pl-4 md:pl-6"
     >
-      <span className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-secondary tabular-nums">
+      <span className="type-h3 text-primary-dark tabular-nums">
         {count}{suffix}
       </span>
-      <span className="mt-2 text-[10px] md:text-xs uppercase tracking-[0.15em] md:tracking-[0.2em] text-text/70">
+      <span className="type-label text-white/70 mt-2">
         {label}
       </span>
     </motion.div>
@@ -58,7 +58,7 @@ function Stat({ value, suffix, label, delay }: { value: number; suffix: string; 
 
 export default function StatsCounter() {
   return (
-    <section className="py-12 md:py-20 bg-primary overflow-x-hidden">
+    <section className="py-14 md:py-20 bg-secondary overflow-x-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
           {stats.map((s, i) => (

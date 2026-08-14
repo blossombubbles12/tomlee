@@ -18,12 +18,12 @@ export const STATUS_CONFIG = {
 export const ENQUIRY_TYPE_LABELS: Record<string, string> = {
   contact: "Contact Form",
   "get-started": "Get Started",
-  "corporate-training": "Corporate Training",
+  "corporate-training": "Home Care Enquiry",
 };
 
 export const INTEREST_AREAS = [
-  "Student Recruitment", "Corporate Training", "ISO Consulting",
-  "Professional Membership", "Audit Projects", "Business Partnerships",
+  "Elderly Care", "Companion Care", "Live-in Care",
+  "Dementia Support", "Post-Surgical Recovery", "Home Care Referrals",
 ];
 
 export const PROGRAM_CATEGORIES = [
@@ -35,26 +35,20 @@ export const LEAD_STATUSES = ["new", "proposal", "discussion", "won", "lost"];
 export const PARTNERSHIP_TYPES = ["educational", "corporate", "government", "non-profit"];
 
 export const INSTITUTIONS = [
-  { label: "Global Institute of Auditing", value: "Global Institute of Auditing" },
-  { label: "Global Institute of Management", value: "Global Institute of Management" },
-  { label: "Institute of Finance & Investment", value: "Institute of Finance & Investment" },
-  { label: "Global Leadership Institute", value: "Global Leadership Institute" },
-  { label: "Global Institute of Hospitality, Tourism & Event Management", value: "Global Institute of Hospitality, Tourism & Event Management" },
-  { label: "Global Institute of Corporate & Strategic Communication", value: "Global Institute of Corporate & Strategic Communication" },
-  { label: "Global Institute of Human Capital & Resources", value: "Global Institute of Human Capital & Resources" },
-  { label: "Business and Skill School", value: "Business and Skill School" },
-  { label: "Institute of Business Startups & Growth", value: "Institute of Business Startups & Growth" },
-  { label: "Institute of Artificial Intelligence & Digital Innovation", value: "Institute of Artificial Intelligence & Digital Innovation" },
-  { label: "Institute of Project Management", value: "Institute of Project Management" },
-  { label: "Global Institute of Supply Chain, Procurement & Logistics", value: "Global Institute of Supply Chain, Procurement & Logistics" },
-  { label: "Global Institute of Data & Business Analytics", value: "Global Institute of Data & Business Analytics" },
-  { label: "Global Institute of Cybersecurity & Information Assurance", value: "Global Institute of Cybersecurity & Information Assurance" },
-  { label: "Institute of Strategic Marketing & Branding", value: "Institute of Strategic Marketing & Branding" },
-  { label: "Global Institute of Public Relations & Customer Experience", value: "Global Institute of Public Relations & Customer Experience" },
-  { label: "Institute of Sales, Revenue & Commercial Leadership", value: "Institute of Sales, Revenue & Commercial Leadership" },
-  { label: "School of Business Administration and Operations", value: "School of Business Administration and Operations" },
-  { label: "Global Executive Institute", value: "Global Executive Institute" },
-  { label: "Institute of Data Protection, Governance, Privacy & Information Security", value: "Institute of Data Protection, Governance, Privacy & Information Security" },
+  { label: "Elderly Companion Care", value: "Elderly Companion Care" },
+  { label: "Live-in Care", value: "Live-in Care" },
+  { label: "Dementia & Memory Support", value: "Dementia & Memory Support" },
+  { label: "Post-Surgical Recovery Care", value: "Post-Surgical Recovery Care" },
+  { label: "Personal Care & Hygiene", value: "Personal Care & Hygiene" },
+  { label: "Mobility Support", value: "Mobility Support" },
+  { label: "Meal Preparation & Nutrition", value: "Meal Preparation & Nutrition" },
+  { label: "Medication Management", value: "Medication Management" },
+  { label: "Chronic Condition Support", value: "Chronic Condition Support" },
+  { label: "Palliative Care Support", value: "Palliative Care Support" },
+  { label: "Transport & Errand Support", value: "Transport & Errand Support" },
+  { label: "Respite Care for Families", value: "Respite Care for Families" },
+  { label: "Newborn & Maternal Home Care", value: "Newborn & Maternal Home Care" },
+  { label: "General Home Care Referral", value: "General Home Care Referral" },
 ];
 
 export const FILE_ACCEPT_TYPES = {

@@ -1,22 +1,22 @@
 import { Metadata } from "next";
 import AboutContent from "./AboutContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about World Impact Africa's mission, vision, and core values — Africa's leading workforce development and professional training organisation.",
+  description: "Learn about Tomlee Home Care's mission, vision, and core values — a trusted provider of compassionate home care across Nigeria.",
   alternates: { canonical: `${base}/about` },
   openGraph: {
-    title: "About Us | World Impact Africa",
-    description: "Learn about World Impact Africa's mission, vision, and core values — Africa's leading workforce development and professional training organisation.",
+    title: "About Us | Tomlee Home Care",
+    description: "Learn about Tomlee Home Care's mission, vision, and core values — a trusted provider of compassionate home care.",
     url: `${base}/about`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "About Us | World Impact Africa",
-    description: "Learn about World Impact Africa's mission, vision, and core values.",
-    images: ["/wialogoicon.png"],
+    title: "About Us | Tomlee Home Care",
+    description: "Learn about Tomlee Home Care's mission, vision, and core values.",
+    images: ["/logo.png"],
   },
 };
 

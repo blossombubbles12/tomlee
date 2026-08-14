@@ -2,22 +2,22 @@ import { Metadata } from "next";
 import { pickImages } from "@/lib/images";
 import RepresentativesContent from "./RepresentativesContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: "Global Representative Network",
-  description: "Join the WorldImpact Global Representative Network — earn commissions, build your professional network, and represent internationally focused institutions in your country.",
+  title: "Care Professional Network",
+  description: "Join the Tomlee Home Care Professional Network — trained and vetted care professionals trusted by families across Nigeria.",
   alternates: { canonical: `${base}/representatives` },
   openGraph: {
-    title: "Global Representative Network | World Impact Africa",
-    description: "Join the WorldImpact Global Representative Network — earn commissions and represent international institutions in your country.",
+    title: "Care Professional Network | Tomlee Home Care",
+    description: "Join the Tomlee Home Care Professional Network — trained and vetted care professionals trusted by families.",
     url: `${base}/representatives`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Global Representative Network | World Impact Africa",
-    description: "Join the WorldImpact Global Representative Network — earn commissions and build your professional network.",
-    images: ["/wialogoicon.png"],
+    title: "Care Professional Network | Tomlee Home Care",
+    description: "Join the Tomlee Home Care Professional Network — trained and vetted care professionals.",
+    images: ["/logo.png"],
   },
 };
 

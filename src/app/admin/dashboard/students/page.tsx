@@ -10,7 +10,7 @@ import { deleteStudent } from "../actions";
 import DeleteButton from "../DeleteButton";
 
 export const metadata: Metadata = {
-  title: "Students — WorldImpact Africa",
+  title: "Clients — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

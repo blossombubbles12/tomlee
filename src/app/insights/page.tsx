@@ -1,24 +1,24 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import InsightsContent from "./InsightsContent";
 import { fetchInsightsFromDB, PLACEHOLDER_INSIGHTS } from "@/lib/insights";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
   title: "Insights",
-  description: "Stay informed with industry trends, research reports, workforce insights, and career guides from World Impact Africa.",
+  description: "Stay informed with care guides, senior living insights, home care tips, and caregiver resources from Tomlee Home Care.",
   alternates: { canonical: `${base}/insights` },
   openGraph: {
-    title: "Insights | World Impact Africa",
-    description: "Industry trends, research reports, workforce insights, and career guides from World Impact Africa.",
+    title: "Insights | Tomlee Home Care",
+    description: "Care guides, senior living insights, home care tips, and caregiver resources from Tomlee Home Care.",
     url: `${base}/insights`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Insights | World Impact Africa",
-    description: "Industry trends, research reports, workforce insights, and career guides from World Impact Africa.",
-    images: ["/wialogoicon.png"],
+    title: "Insights | Tomlee Home Care",
+    description: "Care guides, senior living insights, home care tips, and caregiver resources from Tomlee Home Care.",
+    images: ["/logo.png"],
   },
 };
 
@@ -31,7 +31,7 @@ export default async function InsightsPage() {
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
         title="Insights"
-        subtitle="Articles, research reports, workforce insights, and career guides."
+        subtitle="Care guides, senior living insights, home care tips, and caregiver resources."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Insights" }]}
       />
       <InsightsContent insights={insights} isPlaceholder={isPlaceholder} />

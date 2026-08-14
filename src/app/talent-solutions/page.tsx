@@ -1,22 +1,22 @@
 import { Metadata } from "next";
 import TalentSolutionsContent from "./TalentSolutionsContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: "Talent & Workforce Solutions",
-  description: "World Impact Africa helps organisations build sustainable talent pipelines through training, assessment, and certification services across Africa.",
+  title: "Specialist Care Services",
+  description: "Tomlee Home Care connects families with vetted, trained specialist care professionals — dementia support, recovery care, and chronic condition management.",
   alternates: { canonical: `${base}/talent-solutions` },
   openGraph: {
-    title: "Talent & Workforce Solutions | World Impact Africa",
-    description: "Build sustainable talent pipelines through training, assessment, and certification services across Africa.",
+    title: "Specialist Care Services | Tomlee Home Care",
+    description: "Connect with vetted, trained specialist care professionals — dementia support, recovery care, and chronic condition management.",
     url: `${base}/talent-solutions`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Talent & Workforce Solutions | World Impact Africa",
-    description: "Build sustainable talent pipelines through training, assessment, and certification services.",
-    images: ["/wialogoicon.png"],
+    title: "Specialist Care Services | Tomlee Home Care",
+    description: "Vetted, trained specialist care professionals for dementia support, recovery care, and chronic condition management.",
+    images: ["/logo.png"],
   },
 };
 

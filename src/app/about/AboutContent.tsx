@@ -6,40 +6,40 @@ import PageHero from "@/components/PageHero";
 
 const CORE_VALUES = [
   {
+    title: "Compassion",
+    description: "Every person deserves to be cared for with dignity and warmth. Compassion is the heart of everything our care professionals do.",
+  },
+  {
+    title: "Trust",
+    description: "Families invite us into their homes. We earn that trust through honesty, transparency, and consistent, dependable care.",
+  },
+  {
+    title: "Professionalism",
+    description: "Our care professionals are thoroughly vetted, rigorously trained, and held to the highest standards of home care practice.",
+  },
+  {
+    title: "Respect",
+    description: "We honour each individual's independence, preferences, and personal rhythm — care is personal, never one-size-fits-all.",
+  },
+  {
     title: "Excellence",
-    description: "We hold ourselves to the highest standards in everything we deliver — from curriculum design to training facilitation and certification.",
-  },
-  {
-    title: "Innovation",
-    description: "We embrace new ideas, technologies, and methodologies to stay ahead of workforce development trends across Africa.",
-  },
-  {
-    title: "Impact",
-    description: "Every programme we run is measured by the real difference it makes to individuals, organisations, and communities.",
-  },
-  {
-    title: "Integrity",
-    description: "We act with honesty, transparency, and professionalism in all our relationships — with clients, partners, and learners.",
-  },
-  {
-    title: "Practical Learning",
-    description: "Our programmes are grounded in real-world application, not theory alone. We train for performance, not just knowledge.",
+    description: "From the first call to every visit, we hold ourselves to standards that families can rely on, day after day.",
   },
 ];
 
-// Curated Unsplash images — relevant to African workforce development
+// Curated Unsplash images — relevant to compassionate home care
 const ABOUT_IMAGES = {
-  teamMeeting:    "https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  collaboration:  "https://images.unsplash.com/photo-1655720357872-ce227e4164ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  training:       "https://images.unsplash.com/photo-1744809482817-9a9d4fc280af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  professionals:  "https://images.unsplash.com/photo-1573164574397-dd250bc8a598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  teamMeeting:    "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  collaboration:  "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  training:       "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  professionals:  "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
 };
 
 export default function AboutContent() {
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
-        title="About World Impact Africa"
+        title="About Tomlee Home Care"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         page="about"
       />
@@ -58,7 +58,7 @@ export default function AboutContent() {
             >
               <Image
                 src={ABOUT_IMAGES.teamMeeting}
-                alt="World Impact Africa team meeting — African professionals collaborating"
+                alt="A Tomlee Home Care professional providing compassionate care"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -67,7 +67,7 @@ export default function AboutContent() {
               {/* Accent overlay */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary" />
               <div className="absolute top-4 left-4 bg-primary text-white text-xs font-heading font-semibold px-4 py-2 uppercase tracking-widest">
-                Est. Since 2019
+                Caring Since 2019
               </div>
             </motion.div>
 
@@ -85,7 +85,7 @@ export default function AboutContent() {
                   <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Our Mission</span>
                 </div>
                 <p className="text-text text-lg font-heading leading-relaxed">
-                  To equip individuals and organisations with practical skills, certifications, and workforce solutions that drive performance and economic growth across Africa.
+                  To deliver compassionate, professional home care that lets families and their loved ones live with dignity, comfort, and independence — right where they belong.
                 </p>
               </div>
 
@@ -95,7 +95,7 @@ export default function AboutContent() {
                   <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Our Vision</span>
                 </div>
                 <p className="text-white text-lg font-heading leading-relaxed">
-                  To become Africa&apos;s leading workforce transformation and professional development organisation — a continent where every professional has access to world-class skills.
+                  To become Nigeria&apos;s most trusted home care provider — a family where every person receives the care and companionship they deserve.
                 </p>
               </div>
             </motion.div>
@@ -118,16 +118,16 @@ export default function AboutContent() {
                 <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Who We Are</span>
               </div>
               <h2 className="text-3xl md:text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-6">
-                A Workforce Development Organisation Built for Africa
+                A Home Care Family Built on Trust
               </h2>
               <p className="text-text/80 text-base leading-relaxed mb-4">
-                World Impact Africa is a workforce development and professional training organisation committed to transforming how individuals and organisations build skills for the future of work.
+                Tomlee Home Care is a trusted provider of professional home care services — supporting elderly loved ones, people recovering from illness or surgery, and families who need a helping hand at home.
               </p>
               <p className="text-text/80 text-base leading-relaxed mb-6">
-                We believe sustainable economic growth depends on continuous learning, practical skill development, and strong alignment between education systems and industry needs.
+                We believe care begins with understanding. Every plan we build starts with a conversation about your loved one&apos;s needs, routines, and preferences.
               </p>
               <p className="text-text/80 text-base leading-relaxed">
-                We also work with governments, corporations, NGOs, and institutions to scale workforce development impact across industries and communities throughout Africa.
+                We also work with hospitals, care facilities, and community organisations to extend compassionate care beyond the four walls of a hospital.
               </p>
             </motion.div>
 
@@ -141,7 +141,7 @@ export default function AboutContent() {
               <div className="relative h-56 overflow-hidden col-span-2">
                 <Image
                   src={ABOUT_IMAGES.collaboration}
-                  alt="Team collaborating on a project at World Impact Africa"
+                  alt="A care professional supporting a client at home"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -150,7 +150,7 @@ export default function AboutContent() {
               <div className="relative h-40 overflow-hidden">
                 <Image
                   src={ABOUT_IMAGES.training}
-                  alt="Corporate training session delivered by World Impact Africa"
+                  alt="Tomlee Home Care professional training session"
                   fill
                   className="object-cover"
                   sizes="25vw"
@@ -159,7 +159,7 @@ export default function AboutContent() {
               <div className="relative h-40 overflow-hidden">
                 <Image
                   src={ABOUT_IMAGES.professionals}
-                  alt="African professionals in a World Impact Africa workplace"
+                  alt="A Tomlee Home Care professional ready to serve"
                   fill
                   className="object-cover"
                   sizes="25vw"

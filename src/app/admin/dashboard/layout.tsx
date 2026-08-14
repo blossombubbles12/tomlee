@@ -16,7 +16,7 @@ export default async function AdminDashboardLayout({ children }: { children: Rea
               <div className="w-7 h-7 rounded-md gradient-accent flex items-center justify-center">
                 <GlobeIcon size={13} className="text-white" />
               </div>
-              <h1 className="text-sm font-heading font-semibold text-text">WorldImpact Africa</h1>
+              <h1 className="text-sm font-heading font-semibold text-text">Tomlee Home Care</h1>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-xs text-text/40">{user.name}</span>

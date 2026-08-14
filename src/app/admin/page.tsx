@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { authenticateUser, setSession, getSessionUser } from "@/lib/auth";
 
 export const metadata: Metadata = {
-  title: "Admin Login — WorldImpact Africa",
+  title: "Admin Login — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

@@ -1,22 +1,22 @@
 import { Metadata } from "next";
 import DashboardContent from "./DashboardContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: "Representative Dashboard",
-  description: "WorldImpact Representative Dashboard — manage students, consulting leads, and track commissions.",
+  title: "Care Professional Dashboard",
+  description: "Tomlee Home Care Care Professional Dashboard — manage care referrals, client leads, and track commissions.",
   alternates: { canonical: `${base}/representatives/dashboard` },
   openGraph: {
-    title: "Representative Dashboard | World Impact Africa",
-    description: "WorldImpact Representative Dashboard — manage students, consulting leads, and track commissions.",
+    title: "Care Professional Dashboard | Tomlee Home Care",
+    description: "Tomlee Home Care Care Professional Dashboard — manage referrals, client leads, and track commissions.",
     url: `${base}/representatives/dashboard`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Representative Dashboard | World Impact Africa",
-    description: "WorldImpact Representative Dashboard — manage students, consulting leads, and track commissions.",
-    images: ["/wialogoicon.png"],
+    title: "Care Professional Dashboard | Tomlee Home Care",
+    description: "Tomlee Home Care Care Professional Dashboard — manage referrals, client leads, and track commissions.",
+    images: ["/logo.png"],
   },
 };
 

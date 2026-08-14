@@ -8,7 +8,7 @@ import { deleteApplication } from "../actions";
 import DeleteButton from "../DeleteButton";
 
 export const metadata: Metadata = {
-  title: "Applications — WorldImpact Africa",
+  title: "Applications — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

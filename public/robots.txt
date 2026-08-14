@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://worldimpactafrica.com/sitemap.xml
+Sitemap: https://tomleehomecare.ng/sitemap.xml

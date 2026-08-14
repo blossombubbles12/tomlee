@@ -2,9 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Users, TrendingUp, Monitor, Shield, BarChart3, Heart, ArrowRight, CheckCircle, Send, Building2 } from "lucide-react";
+import { Heart, Bath, ShowerHead, Utensils, Pill, CheckCircle, Send, DoorOpen } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 function img(images: string[], idx: number): string {
@@ -12,26 +11,26 @@ function img(images: string[], idx: number): string {
 }
 
 const OFFERINGS = [
-  { icon: Users,      title: "Leadership Development",        desc: "Build the next generation of leaders with targeted leadership and management training." },
-  { icon: TrendingUp, title: "Sales Performance Training",    desc: "Equip your sales teams with skills to drive revenue and build lasting client relationships." },
-  { icon: Heart,      title: "Customer Experience Training",  desc: "Deliver exceptional customer experiences through structured service excellence training." },
-  { icon: Monitor,    title: "Digital Skills Training",       desc: "Prepare your workforce for the digital economy with practical technology and data literacy skills." },
-  { icon: Shield,     title: "Compliance & Risk Training",    desc: "Ensure your organisation meets regulatory requirements with focused compliance training." },
-  { icon: BarChart3,  title: "HR & Workforce Development",    desc: "Build HR capability and strategic workforce planning skills across your people function." },
+  { icon: Bath,      title: "Personal Care & Hygiene",      desc: "Gentle assistance with bathing, grooming, dressing, and daily hygiene routines." },
+  { icon: ShowerHead, title: "Mobility Support",            desc: "Help with moving around the home, transfers, and safe daily activity." },
+  { icon: Utensils,  title: "Meal Preparation & Nutrition", desc: "Nutritious meals prepared around your loved one's dietary needs and preferences." },
+  { icon: Pill,      title: "Medication Reminders",         desc: "Timely, careful medication reminders and support with daily medication routines." },
+  { icon: Heart,     title: "Companionship & Connection",   desc: "Warm, consistent companionship that brightens each day and reduces loneliness." },
+  { icon: DoorOpen,  title: "Household & Errand Assistance", desc: "Light housekeeping and errand support so home stays comfortable and cared for." },
 ];
 
 const STEPS = [
-  { step: 1, title: "Needs Assessment",           desc: "We evaluate your workforce gaps, performance challenges, and strategic objectives." },
-  { step: 2, title: "Programme Design",           desc: "Our experts design a custom curriculum aligned to your industry, culture, and learning outcomes." },
-  { step: 3, title: "Delivery",                   desc: "Expert-led training delivered onsite, virtually, or through a blended approach." },
-  { step: 4, title: "Evaluation & Certification", desc: "We measure impact, report on outcomes, and issue certificates to completers." },
+  { step: 1, title: "Free Care Assessment",      desc: "We meet your loved one and family to understand needs, routines, and preferences." },
+  { step: 2, title: "Personalised Care Plan",    desc: "We design a bespoke care plan around your loved one's lifestyle and goals." },
+  { step: 3, title: "Professional Matching",     desc: "We match a vetted, trained care professional who fits your family's home." },
+  { step: 4, title: "Ongoing Family Support",    desc: "Regular check-ins and transparent updates so you're always in the loop." },
 ];
 
 const BENEFITS = [
-  { title: "Improved Employee Productivity",    desc: "Directly measurable improvement in workforce output and performance metrics." },
-  { title: "Stronger Leadership Capability",   desc: "Develop leaders who drive teams and execute strategy effectively." },
-  { title: "Better Customer Satisfaction",     desc: "Customer-facing teams that deliver consistent, exceptional experiences." },
-  { title: "Increased Operational Efficiency", desc: "Streamlined processes and skilled teams that reduce waste and cost." },
+  { title: "Independence Preserved",    desc: "Care that supports, never replaces — your loved one stays in charge of their own life." },
+  { title: "Peace of Mind for Families", desc: "Rested, confident family members knowing their loved one is in safe hands." },
+  { title: "Consistent, Dependable Care", desc: "The same familiar professional, visit after visit." },
+  { title: "Flexible Scheduling",        desc: "Hourly visits, overnight stays, or live-in — wherever support is needed." },
 ];
 
 export default function CorporateTrainingContent({ images }: { images: string[] }) {
@@ -70,9 +69,9 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
-        title="Corporate Training Solutions"
-        subtitle="Customised training programmes that improve workforce performance and drive organisational results."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Corporate Training" }]}
+        title="Personal Home Care"
+        subtitle="Dignified, everyday support delivered in the comfort of home — built around your loved one's life."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Personal Home Care" }]}
       />
 
       {/* What We Offer — image + intro */}
@@ -84,13 +83,13 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
                 <div className="w-8 h-[2px] bg-primary" />
                 <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">What We Offer</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">Training Programmes We Deliver</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">The Support Your Loved One Needs</h2>
               <p className="text-text/80 text-base leading-relaxed">
-                From leadership to digital skills — our customised programmes are built around your organisation&apos;s specific goals and delivered by seasoned industry practitioners.
+                From morning routines to evening meals — our trained care professionals deliver practical, compassionate support that keeps life comfortable and independent at home.
               </p>
             </div>
             <div className="relative h-64 overflow-hidden">
-              <Image src={img(images, 0)} alt="Corporate training workshop" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+              <Image src={img(images, 0)} alt="Care professional supporting a client at home" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-secondary/20" />
             </div>
           </div>
@@ -121,7 +120,7 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative h-64 overflow-hidden order-last lg:order-first">
-              <Image src={img(images, 1)} alt="World Impact Africa training process" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+              <Image src={img(images, 1)} alt="Tomlee Home Care professional training process" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-primary/10" />
             </div>
             <div>
@@ -129,9 +128,9 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
                 <div className="w-8 h-[2px] bg-primary" />
                 <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">How It Works</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">Our 4-Step Process</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">Our 4-Step Care Process</h2>
               <p className="text-text/80 text-base leading-relaxed">
-                Every engagement begins with understanding — and ends with measurable impact.
+                Every care journey begins with understanding — and ends with genuine peace of mind.
               </p>
             </div>
           </div>
@@ -167,7 +166,7 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
             <div className="w-8 h-[2px] bg-primary" />
             <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Benefits</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-12">Why Organisations Choose Us</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-12">Why Families Choose Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {BENEFITS.map((b, i) => (
               <motion.div
@@ -199,13 +198,13 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
                 <span className="text-primary text-xs font-medium tracking-[0.3em] uppercase">Enquire Now</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">
-                Request a Corporate Training Proposal
+                Request a Free Care Assessment
               </h2>
               <p className="text-text/80 text-base leading-relaxed mb-6">
-                Tell us about your training needs and our team will get back to you with a customised proposal within 48 hours.
+                Tell us about your loved one&apos;s needs and our care team will get back to you within 24 hours.
               </p>
               <div className="relative h-64 overflow-hidden">
-                <Image src={img(images, 2)} alt="Get in touch" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+                <Image src={img(images, 2)} alt="Get in touch with Tomlee Home Care" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
                 <div className="absolute inset-0 bg-secondary/20" />
               </div>
             </div>
@@ -215,13 +214,13 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
                 <div className="text-center py-12">
                   <CheckCircle size={48} className="text-primary mx-auto mb-4" strokeWidth={1.5} />
                   <h3 className="text-xl font-heading font-bold text-text mb-2">Enquiry Received</h3>
-                  <p className="text-text/80 text-sm">Thank you. Our team will review your request and respond within 48 hours.</p>
+                  <p className="text-text/80 text-sm">Thank you. Our care team will review your request and respond within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Organisation</label>
+                      <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Your Name</label>
                       <input name="organisation" value={formData.organisation} onChange={handleChange} required
                         className="w-full border border-secondary/20 bg-white px-4 py-2.5 text-sm text-text placeholder:text-text/30 focus:outline-none focus:border-primary transition-colors" />
                     </div>
@@ -244,22 +243,22 @@ export default function CorporateTrainingContent({ images }: { images: string[] 
                     </div>
                   </div>
                   <div>
-                    <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Training Needs</label>
+                    <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Support Needed</label>
                     <select name="trainingNeeds" value={formData.trainingNeeds} onChange={handleChange} required
                       className="w-full border border-secondary/20 bg-white px-4 py-2.5 text-sm text-text focus:outline-none focus:border-primary transition-colors">
-                      <option value="">Select area of interest</option>
-                      <option value="leadership">Leadership Development</option>
-                      <option value="sales">Sales Performance</option>
-                      <option value="customer">Customer Experience</option>
-                      <option value="digital">Digital Skills</option>
-                      <option value="compliance">Compliance &amp; Risk</option>
-                      <option value="hr">HR &amp; Workforce Development</option>
+                      <option value="">Select area of care</option>
+                      <option value="leadership">Personal Care &amp; Hygiene</option>
+                      <option value="sales">Mobility Support</option>
+                      <option value="customer">Meal Preparation</option>
+                      <option value="digital">Medication Reminders</option>
+                      <option value="compliance">Companionship &amp; Connection</option>
+                      <option value="hr">Household &amp; Errand Assistance</option>
                       <option value="other">Other</option>
                     </select>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Expected Participants</label>
+                      <label className="block text-xs font-heading font-semibold text-text mb-1 uppercase tracking-wide">Hours Needed / Week</label>
                       <input name="participants" value={formData.participants} onChange={handleChange}
                         className="w-full border border-secondary/20 bg-white px-4 py-2.5 text-sm text-text placeholder:text-text/30 focus:outline-none focus:border-primary transition-colors" />
                     </div>

@@ -7,7 +7,7 @@ import DeleteButton from "../DeleteButton";
 import { Mail, Search } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Enquiries — WorldImpact Africa",
+  title: "Enquiries — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

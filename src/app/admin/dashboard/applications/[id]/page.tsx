@@ -10,7 +10,7 @@ import DeleteButton from "../../DeleteButton";
 import StatusActionButtons from "../../StatusActionButtons";
 
 export const metadata: Metadata = {
-  title: "Application Details — WorldImpact Africa",
+  title: "Application Details — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

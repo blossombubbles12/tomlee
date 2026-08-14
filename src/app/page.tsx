@@ -3,30 +3,33 @@ import { pickSliderImages } from "@/lib/images";
 import Hero from "@/components/Hero";
 import WhoWeAre from "@/components/WhoWeAre";
 import WhatWeDo from "@/components/WhatWeDo";
+import ServiceCards from "@/components/ServiceCards";
 import IndustriesServed from "@/components/IndustriesServed";
+import IndustriesCards from "@/components/IndustriesCards";
 import StatsCounter from "@/components/StatsCounter";
 import PartnersAccreditations from "@/components/PartnersAccreditations";
 import GovernmentPartnerships from "@/components/GovernmentPartnerships";
 import WhyWorldImpact from "@/components/WhyWorldImpact";
+import WhyCards from "@/components/WhyCards";
 import Testimonials from "@/components/Testimonials";
 import HomeClosingCTA from "@/components/HomeClosingCTA";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: { absolute: "World Impact Africa — Workforce Development & Professional Training in Africa" },
-  description: "World Impact Africa delivers workforce development, professional certifications, corporate training, and talent solutions across Africa.",
+  title: { absolute: "Tomlee Home Care — Compassionate Home Health & Elderly Care Services" },
+  description: "Tomlee Home Care delivers professional home health, elderly care, and personal support services with compassion — helping families care for loved ones in the comfort of home.",
   alternates: { canonical: base },
   openGraph: {
-    title: "World Impact Africa — Workforce Development & Professional Training in Africa",
-    description: "World Impact Africa delivers workforce development, professional certifications, corporate training, and talent solutions across Africa.",
+    title: "Tomlee Home Care — Compassionate Home Health & Elderly Care Services",
+    description: "Professional home health and elderly care delivered with compassion, in the comfort of home.",
     url: base,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "World Impact Africa — Workforce Development & Professional Training in Africa",
-    description: "World Impact Africa delivers workforce development, professional certifications, corporate training, and talent solutions across Africa.",
-    images: ["/wialogoicon.png"],
+    title: "Tomlee Home Care — Compassionate Home Health & Elderly Care Services",
+    description: "Professional home health and elderly care delivered with compassion, in the comfort of home.",
+    images: ["/logo.png"],
   },
 };
 
@@ -37,11 +40,14 @@ export default function Home() {
       <Hero images={heroImages} />
       <WhoWeAre />
       <WhatWeDo />
+      <ServiceCards />
       <IndustriesServed />
+      <IndustriesCards />
+      <WhyWorldImpact />
+      <WhyCards />
       <StatsCounter />
       <PartnersAccreditations />
       <GovernmentPartnerships />
-      <WhyWorldImpact />
       <Testimonials />
       <HomeClosingCTA />
     </div>

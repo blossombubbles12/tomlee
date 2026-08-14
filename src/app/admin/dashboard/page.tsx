@@ -17,7 +17,7 @@ import WorldMap from "./WorldMap";
 import MiniChart from "./MiniChart";
 
 export const metadata: Metadata = {
-  title: "Dashboard — WorldImpact Africa",
+  title: "Dashboard — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

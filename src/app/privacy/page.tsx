@@ -1,22 +1,22 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import PrivacyContent from "./PrivacyContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
     title: "Privacy Policy",
-    description: "Learn how World Impact Africa handles and protects your personal information and training data.",
+    description: "Learn how Tomlee Home Care handles and protects your personal information and care data.",
     alternates: { canonical: `${base}/privacy` },
     openGraph: {
-      title: "Privacy Policy | World Impact Africa",
-      description: "Learn how World Impact Africa handles and protects your personal information and training data.",
+      title: "Privacy Policy | Tomlee Home Care",
+      description: "Learn how Tomlee Home Care handles and protects your personal information and care data.",
       url: `${base}/privacy`,
-      images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+      images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
     },
     twitter: {
-      title: "Privacy Policy | World Impact Africa",
-      description: "Learn how World Impact Africa protects your personal information and training data.",
-      images: ["/wialogoicon.png"],
+      title: "Privacy Policy | Tomlee Home Care",
+      description: "Learn how Tomlee Home Care protects your personal information and care data.",
+      images: ["/logo.png"],
     },
     robots: { index: false, follow: true },
 };

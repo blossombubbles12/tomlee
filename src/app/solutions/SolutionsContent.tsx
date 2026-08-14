@@ -1,47 +1,47 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BookOpen, Award, Users, ArrowRight } from "lucide-react";
+import { HeartHandshake, CalendarHeart, Stethoscope, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 const IMGS = {
-  training:      "https://images.unsplash.com/photo-1744809482817-9a9d4fc280af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  certification: "https://images.unsplash.com/photo-1778922286590-5cc0bcba34ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-  talent:        "https://images.unsplash.com/photo-1573164574397-dd250bc8a598?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  personal:  "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  companions: "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
+  specialist: "https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
 };
 
 const SOLUTION_PILLARS = [
   {
-    icon: BookOpen,
-    title: "Corporate Training Solutions",
-    description: "Tailored training programmes aligned to your organisation's strategic objectives. We design and deliver leadership development, sales performance, digital skills, customer experience, and HR training.",
+    icon: CalendarHeart,
+    title: "Personal Home Care",
+    description: "Dignified, everyday support delivered in the comfort of home. Our care professionals assist with daily living activities while preserving your loved one's independence.",
     href: "/corporate-training",
-    cta: "Explore Corporate Training",
-    features: ["Leadership Development", "Sales & Customer Service", "Digital Transformation", "HR & Management Training"],
-    image: IMGS.training,
-    imageAlt: "Corporate training workshop with African professionals",
+    cta: "Explore Personal Home Care",
+    features: ["Daily Living Assistance", "Mobility Support", "Meal Preparation", "Medication Reminders"],
+    image: IMGS.personal,
+    imageAlt: "Personal home care professional assisting a client",
   },
   {
-    icon: Award,
-    title: "Professional Certification Programs",
-    description: "Industry-relevant certifications across business, technology, finance, and leadership that validate skills and improve career progression — through training-based or exam-only pathways.",
+    icon: HeartHandshake,
+    title: "Elderly & Companion Care",
+    description: "Warm companionship and attentive elderly care that brings comfort, connection, and peace of mind to families — available flexible, 24/7, or live-in.",
     href: "/certifications",
-    cta: "View Certifications",
-    features: ["Business & Management", "Digital Skills & Technology", "Finance & Data Analytics", "Leadership & HR"],
-    image: IMGS.certification,
-    imageAlt: "Professional certification presenter",
+    cta: "Explore Elderly & Companion Care",
+    features: ["Companionship & Engagement", "Live-in Care", "Dementia & Memory Support", "Respite for Families"],
+    image: IMGS.companions,
+    imageAlt: "Companion care professional with an elderly client",
   },
   {
-    icon: Users,
-    title: "Workforce & Talent Solutions",
-    description: "End-to-end talent pipeline development including graduate programmes, internship pipelines, corporate talent outsourcing, skills assessment, and workforce planning.",
+    icon: Stethoscope,
+    title: "Specialist Care Services",
+    description: "Specialist care for recovery, complex conditions, and chronic needs — delivered by vetted, trained professionals matched to your loved one's situation.",
     href: "/talent-solutions",
-    cta: "Explore Talent Solutions",
-    features: ["Graduate Training Programmes", "Internship Pipelines", "Talent Outsourcing", "Skills Assessment & Planning"],
-    image: IMGS.talent,
-    imageAlt: "African workforce professionals",
+    cta: "Explore Specialist Care",
+    features: ["Post-Surgical Recovery Care", "Chronic Condition Support", "Post-Operative Palliative Care", "Trained Specialists"],
+    image: IMGS.specialist,
+    imageAlt: "Specialist home care professional in action",
   },
 ];
 
@@ -49,9 +49,9 @@ export default function SolutionsContent() {
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
-        title="Our Solutions"
-        subtitle="Integrated workforce development solutions for organisations, governments, and institutions."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Solutions" }]}
+        title="Our Services"
+        subtitle="Compassionate, professional home care services designed around your family's needs."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
 
       <section className="py-12 md:py-20 lg:py-24 bg-surface">
@@ -63,10 +63,10 @@ export default function SolutionsContent() {
               <div className="w-8 h-[2px] bg-primary" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">
-              Three Pillars of <span className="text-secondary">Workforce Transformation</span>
+              Three Pillars of <span className="text-secondary">Compassionate Care</span>
             </h2>
             <p className="text-text/80 text-base leading-relaxed">
-              World Impact Africa provides integrated solutions designed to build skills, validate competencies, and develop talent pipelines across Africa.
+              Tomlee Home Care provides integrated services designed to keep your loved ones safe, comfortable, and independent at home.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export default function SolutionsContent() {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-white mb-4">Not Sure Where to Start?</h2>
-          <p className="text-white/80 text-base mb-8">Talk to our team and we&apos;ll help identify the right solution for your needs.</p>
+          <p className="text-white/80 text-base mb-8">Talk to our care team and we&apos;ll help you find the right support for your loved one.</p>
           <Link href="/get-started" className="inline-flex items-center gap-2 bg-primary text-white px-5 sm:px-8 py-3 sm:py-4 font-heading font-semibold text-xs sm:text-sm tracking-wide hover:bg-white hover:text-secondary transition-colors">
             Get Started <ArrowRight size={15} />
           </Link>

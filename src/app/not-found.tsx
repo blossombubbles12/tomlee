@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "404 — Page Not Found",
-  description: "The page you are looking for does not exist or has been moved. Return to World Impact Africa.",
+  description: "The page you are looking for does not exist or has been moved. Return to Tomlee Home Care.",
   robots: { index: false, follow: false },
 };
 
@@ -29,7 +29,7 @@ export default function NotFound() {
             href="/solutions"
             className="inline-flex items-center gap-2 border border-secondary/20 text-text px-6 py-3 font-heading font-semibold text-sm tracking-wide hover:border-primary hover:text-primary transition-colors"
           >
-            View Our Solutions <ArrowRight size={15} />
+            View Our Services <ArrowRight size={15} />
           </Link>
         </div>
       </div>

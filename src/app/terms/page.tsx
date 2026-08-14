@@ -1,22 +1,22 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import TermsContent from "./TermsContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
     title: "Terms of Service",
-    description: "Read the terms and conditions for engaging with World Impact Africa's training and professional development services.",
+    description: "Read the terms and conditions for engaging with Tomlee Home Care's services.",
     alternates: { canonical: `${base}/terms` },
     openGraph: {
-      title: "Terms of Service | World Impact Africa",
-      description: "Read the terms and conditions for engaging with World Impact Africa's services.",
+      title: "Terms of Service | Tomlee Home Care",
+      description: "Read the terms and conditions for engaging with Tomlee Home Care's services.",
       url: `${base}/terms`,
-      images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+      images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
     },
     twitter: {
-      title: "Terms of Service | World Impact Africa",
-      description: "Read the terms and conditions for engaging with World Impact Africa's services.",
-      images: ["/wialogoicon.png"],
+      title: "Terms of Service | Tomlee Home Care",
+      description: "Read the terms and conditions for engaging with Tomlee Home Care's services.",
+      images: ["/logo.png"],
     },
     robots: { index: false, follow: true },
 };

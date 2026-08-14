@@ -37,7 +37,7 @@ export default function ApplyContent() {
       if (phoneErr) errors.phone = phoneErr;
       const emailErr = validators.required(values.email, "Email") || validators.email(values.email);
       if (emailErr) errors.email = emailErr;
-      const orgErr = validators.required(values.organisation, "Institution");
+      const orgErr = validators.required(values.organisation, "Care specialty");
       if (orgErr) errors.organisation = orgErr;
       return errors;
     },
@@ -64,18 +64,18 @@ export default function ApplyContent() {
   return (
     <div className="flex flex-col w-full overflow-x-hidden">
       <PageHero
-        title="Apply to Become a Representative"
+        title="Apply to Join the Care Professional Network"
         subtitle="Complete the application form below and our team will review your application."
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: "Apply" }]}
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Care Professional Network", href: "/representatives" }, { label: "Apply" }]}
       />
 
       <section className="py-12 md:py-20 lg:py-24 bg-surface">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">Representative Application</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-text mb-4">Care Professional Application</h2>
               <p className="text-text/85 text-base max-w-xl mx-auto">
-                Join the World Impact Africa Global Representative Network. Fill in your details below.
+                Join the Tomlee Home Care Professional Network. Fill in your details below.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function ApplyContent() {
                 <Input label="Phone Number" name="phone" value={form.values.phone} onChange={form.handleChange} error={form.errors.phone} required />
                 <Input label="Email Address" name="email" type="email" value={form.values.email} onChange={form.handleChange} error={form.errors.email} required />
                 <Input label="Occupation" name="occupation" value={form.values.occupation} onChange={form.handleChange} />
-                <ComboBox label="Select Institution" name="organisation" value={form.values.organisation} onChange={(val) => form.setFieldValue("organisation", val)} options={INSTITUTIONS} placeholder="Choose your institution..." error={form.errors.organisation} required />
+                <ComboBox label="Select Care Specialty" name="organisation" value={form.values.organisation} onChange={(val) => form.setFieldValue("organisation", val)} options={INSTITUTIONS} placeholder="Choose your specialty..." error={form.errors.organisation} required />
                 <Input label="LinkedIn Profile" name="linkedin" value={form.values.linkedin} onChange={form.handleChange} placeholder="https://linkedin.com/in/..." />
               </div>
 
@@ -115,7 +115,7 @@ export default function ApplyContent() {
               </div>
 
               <div className="mb-8">
-                <FileUpload onUpload={(url) => setCvUrl(url)} value={cvUrl} label="Upload CV (PDF, DOC, DOCX — max 5MB)" />
+                <FileUpload onUpload={(url) => setCvUrl(url)} value={cvUrl} label="Upload CV / Credentials (PDF, DOC, DOCX — max 5MB)" />
               </div>
 
               <div className="text-center">

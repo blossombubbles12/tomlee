@@ -16,8 +16,8 @@ export interface EnquiryEmail {
 }
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
-const FROM = "WorldImpact Africa <noreply@worldimpactafrica.com>";
-const TO = "info@worldimpactafrica.com";
+const FROM = "Tomlee Home Care <noreply@tomleehomecare.ng>";
+const TO = "info@tomleehomecare.ng";
 
 function formatEnquiryBody(data: EnquiryEmail): string {
   const lines = [

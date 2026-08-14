@@ -3,45 +3,45 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Building2, UserCircle, Landmark, ArrowRight } from "lucide-react";
+import { HeartHandshake, UserRound, Building2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const IMG_GETSTARTED = "https://images.unsplash.com/photo-1655720357872-ce227e4164ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
+const IMG_GETSTARTED = "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200";
 
 const AUDIENCES = [
   {
     key: "organisations",
-    label: "For Organisations",
-    icon: Building2,
-    description: "Corporate training, workforce development, and talent solutions for businesses and enterprises.",
+    label: "For Families",
+    icon: HeartHandshake,
+    description: "Home care for an elderly loved one, recovery care, or a family member who needs a helping hand at home.",
     fields: [
-      { id: "orgName",    label: "Organisation Name", type: "text",  required: true,  placeholder: "Your company name" },
-      { id: "orgContact", label: "Contact Person",    type: "text",  required: true,  placeholder: "Your full name" },
-      { id: "orgEmail",   label: "Email Address",     type: "email", required: true,  placeholder: "your@organisation.com" },
-      { id: "orgNeed",    label: "Training Need",     type: "text",  required: false, placeholder: "e.g. Leadership training for 50 managers" },
+      { id: "orgName",    label: "Care Recipient's Name",  type: "text",  required: true,  placeholder: "Name of person needing care" },
+      { id: "orgContact", label: "Contact Person",         type: "text",  required: true,  placeholder: "Your full name" },
+      { id: "orgEmail",   label: "Email Address",          type: "email", required: true,  placeholder: "your@email.com" },
+      { id: "orgNeed",    label: "Care Need",              type: "text",  required: false, placeholder: "e.g. Elderly companion care, 4 hours a day" },
     ],
   },
   {
     key: "individuals",
-    label: "For Individuals",
-    icon: UserCircle,
-    description: "Certification programmes and professional training for individuals advancing their careers.",
+    label: "For Care Professionals",
+    icon: UserRound,
+    description: "Join our care professional network — get matched with families that need your skills and compassion.",
     fields: [
       { id: "indName",     label: "Full Name",              type: "text",  required: true,  placeholder: "Your full name" },
       { id: "indEmail",    label: "Email Address",          type: "email", required: true,  placeholder: "your@email.com" },
-      { id: "indInterest", label: "Programme of Interest",  type: "text",  required: false, placeholder: "e.g. Certified Project Management Professional" },
+      { id: "indInterest", label: "Specialty / Experience", type: "text",  required: false, placeholder: "e.g. Elderly care, dementia support, live-in care" },
     ],
   },
   {
     key: "governments",
-    label: "For Governments",
-    icon: Landmark,
-    description: "Partnership programmes, public workforce assessments, and community training for government agencies.",
+    label: "For Hospitals & Partners",
+    icon: Building2,
+    description: "Partner with us — hospital discharge support, care facility staffing, and community care programmes.",
     fields: [
-      { id: "govAgency",  label: "Agency / Ministry", type: "text",  required: true,  placeholder: "Agency or ministry name" },
-      { id: "govContact", label: "Contact Person",    type: "text",  required: true,  placeholder: "Your full name" },
-      { id: "govEmail",   label: "Email Address",     type: "email", required: true,  placeholder: "your@agency.gov.ng" },
-      { id: "govScope",   label: "Programme Scope",   type: "text",  required: false, placeholder: "e.g. Digital skills training for 500 civil servants" },
+      { id: "govAgency",  label: "Organisation / Facility", type: "text",  required: true,  placeholder: "Hospital or facility name" },
+      { id: "govContact", label: "Contact Person",          type: "text",  required: true,  placeholder: "Your full name" },
+      { id: "govEmail",   label: "Email Address",           type: "email", required: true,  placeholder: "your@organisation.com" },
+      { id: "govScope",   label: "Partnership Scope",       type: "text",  required: false, placeholder: "e.g. Post-discharge care support for our patients" },
     ],
   },
 ];
@@ -63,11 +63,11 @@ export default function GetStartedFlow() {
 
         {/* Intro image banner */}
         <div className="relative h-36 md:h-44 mb-8 md:mb-12 overflow-hidden">
-          <Image src={IMG_GETSTARTED} alt="Get started with World Impact Africa" fill className="object-cover" sizes="100vw" />
+          <Image src={IMG_GETSTARTED} alt="Get started with Tomlee Home Care" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-secondary/70" />
           <div className="absolute inset-0 flex flex-col justify-center px-10">
-            <p className="text-primary text-xs font-medium tracking-[0.3em] uppercase mb-2">Start Your Journey</p>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white">Select who you are to get the right solution</h2>
+            <p className="text-primary text-xs font-medium tracking-[0.3em] uppercase mb-2">Start Your Care Journey</p>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white">Select who you are to get the right support</h2>
           </div>
         </div>
 
@@ -150,7 +150,7 @@ export default function GetStartedFlow() {
             >
               <div className="text-4xl mb-4">✓</div>
               <h3 className="text-xl font-heading font-bold text-green-800 mb-2">Enquiry Submitted!</h3>
-              <p className="text-green-700 text-sm">Thank you. Our team will be in touch within 24 hours.</p>
+              <p className="text-green-700 text-sm">Thank you. Our care team will be in touch within 24 hours.</p>
             </motion.div>
           )}
         </AnimatePresence>

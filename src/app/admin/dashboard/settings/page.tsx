@@ -8,7 +8,7 @@ import { Settings } from "lucide-react";
 import SettingsForm from "./SettingsForm";
 
 export const metadata: Metadata = {
-  title: "Settings — WorldImpact Africa",
+  title: "Settings — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

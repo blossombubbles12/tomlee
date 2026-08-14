@@ -6,10 +6,10 @@ interface InsightCardProps {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "Articles":           "bg-primary/10 text-primary",
-  "Research Reports":   "bg-secondary/10 text-secondary",
-  "Workforce Insights": "bg-blue-100 text-blue-700",
-  "Career Guides":      "bg-purple-100 text-purple-700",
+  "Articles":               "bg-primary/10 text-primary",
+  "Senior Living Insights": "bg-secondary/10 text-secondary",
+  "Home Care Tips":         "bg-tint text-secondary",
+  "Caregiver Resources":    "bg-primary/10 text-primary-dark",
 };
 
 export default function InsightCard({ insight }: InsightCardProps) {

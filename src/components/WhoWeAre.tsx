@@ -2,86 +2,71 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function WhoWeAre() {
   return (
-    <section className="py-16 md:py-24 bg-surface overflow-x-hidden">
+    <section className="py-24 md:py-32 lg:py-36 bg-background overflow-x-hidden">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
+          {/* ── Text ── */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+            className="lg:col-span-6"
           >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-[2px] bg-primary shrink-0" />
-              <span className="text-primary text-xs font-medium tracking-[0.2em] uppercase">Who We Are</span>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-10 h-[2px] bg-primary shrink-0" />
+              <span className="type-label text-primary">Who We Are</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text leading-tight mb-5">
-              Africa&apos;s Workforce<br />
-              <span className="text-secondary">Development Partner</span>
+
+            <h2 className="type-h2 text-secondary mb-6">
+              Care That Feels Like<br />
+              <span className="text-primary-dark">Family</span>
             </h2>
-            <p className="text-text/80 text-sm sm:text-base leading-relaxed mb-4">
-              World Impact Africa is a workforce development organisation focused on closing the gap between education and industry performance across Africa.
-            </p>
-            <p className="text-text/80 text-sm sm:text-base leading-relaxed">
-              We design and deliver corporate training, professional certifications, and workforce solutions that equip individuals and organisations with practical, job-ready skills.
+
+            <p className="type-body text-muted mb-10 max-w-xl">
+              Tomlee Home Care is a professional home-care organisation committed to helping families keep
+              their loved ones safe, comfortable, and independent &mdash; in the place they love most: home.
             </p>
 
-            {/* Stats grid */}
-            <div className="grid grid-cols-2 gap-3 mt-8">
-              {[
-                { number: "500+", label: "Professionals Trained" },
-                { number: "50+",  label: "Corporate Clients" },
-                { number: "10+",  label: "Certification Programmes" },
-                { number: "5+",   label: "Years of Impact" },
-              ].map((item) => (
-                <div key={item.label} className="bg-white p-4 border border-secondary/10">
-                  <p className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">{item.number}</p>
-                  <p className="text-[10px] md:text-xs text-text/70 uppercase tracking-widest">{item.label}</p>
-                </div>
-              ))}
-            </div>
+            <Link
+              href="/get-started"
+              className="group inline-flex items-center gap-3 bg-primary text-secondary px-7 sm:px-8 py-3.5 sm:py-4 font-heading font-semibold text-sm rounded-full hover:bg-primary-dark hover:text-white active:scale-[0.98] transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] shadow-card"
+            >
+              Request Care
+              <span className="w-7 h-7 rounded-full bg-white/25 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-0.5">
+                <ArrowRight size={13} />
+              </span>
+            </Link>
           </motion.div>
 
-          {/* Image collage — hidden on very small, shown sm+ */}
+          {/* ── Image ── */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="grid grid-cols-2 gap-3 mt-8 lg:mt-0"
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.32, 0.72, 0, 1] }}
+            className="lg:col-span-6 relative"
           >
-            <div className="relative h-44 sm:h-52 col-span-2 overflow-hidden">
+            <div className="relative aspect-square rounded-[2.5rem] border-[6px] border-white overflow-hidden shadow-card">
               <Image
-                src="https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
-                alt="World Impact Africa professionals in a collaborative meeting"
+                src="https://images.unsplash.com/photo-1584515933487-779824d29309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1400"
+                alt="Caregiver warmly supporting an elderly woman at home"
                 fill
                 className="object-cover"
-                sizes="(max-width:768px) 100vw, 50vw"
+                sizes="(max-width:1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-secondary/10" />
             </div>
-            <div className="relative h-32 sm:h-36 overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1744809482817-9a9d4fc280af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
-                alt="Corporate training session"
-                fill
-                className="object-cover"
-                sizes="(max-width:768px) 50vw, 25vw"
-              />
-            </div>
-            <div className="relative h-32 sm:h-36 overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1655720357872-ce227e4164ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
-                alt="Team collaboration at World Impact Africa"
-                fill
-                className="object-cover"
-                sizes="(max-width:768px) 50vw, 25vw"
-              />
-              <div className="absolute inset-0 bg-primary/10" />
+
+            {/* Floating stat card */}
+            <div className="absolute -bottom-6 left-6 sm:left-8 bg-white border border-secondary/8 rounded-2xl shadow-card px-6 py-5">
+              <p className="text-2xl md:text-3xl font-heading font-bold text-primary-dark mb-1">500+</p>
+              <p className="type-label text-muted">Lives Supported</p>
             </div>
           </motion.div>
         </div>

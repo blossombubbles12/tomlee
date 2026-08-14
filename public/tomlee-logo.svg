@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" width="512" height="128">
+  <!-- horizontal lockup: mark + wordmark -->
+  <g>
+    <rect x="8" y="8" width="112" height="112" rx="28" fill="#00264D"/>
+    <g fill="none" stroke="#FBA919" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 62 L64 40 L88 62"/>
+      <path d="M50 62 V104 H78 V62"/>
+      <path d="M64 100 C56 93 50 88 50 81 C50 75 55 72 60 72 C63 72 64 74 64 77 C64 74 65 72 68 72 C73 72 78 75 78 81 C78 88 72 93 64 100 Z"/>
+    </g>
+  </g>
+  <text x="140" y="64" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#00264D" letter-spacing="1">Tomlee</text>
+  <text x="141" y="94" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#E08E00" letter-spacing="6">HOME&#160;CARE</text>
+</svg>

@@ -11,7 +11,7 @@ import { deleteRepresentative } from "../actions";
 import DeleteButton from "../DeleteButton";
 
 export const metadata: Metadata = {
-  title: "Representatives — WorldImpact Africa",
+  title: "Representatives — Tomlee Home Care",
   robots: { index: false, follow: false },
 };
 

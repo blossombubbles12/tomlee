@@ -1,38 +1,37 @@
 import { Metadata } from "next";
 import CertificationsContent from "./CertificationsContent";
 
-const base = "https://worldimpactafrica.com";
+const base = "https://tomleehomecare.ng";
 
 export const metadata: Metadata = {
-  title: "Professional Certifications",
-  description: "World Impact Africa offers industry-relevant professional certification programmes with training-based and exam-only pathways across business, technology, finance, and leadership.",
+  title: "Elderly & Companion Care",
+  description: "Tomlee Home Care provides certified elderly care and companion care programmes — with trained and vetted care professionals ready for flexible, 24/7 support.",
   alternates: { canonical: `${base}/certifications` },
   openGraph: {
-    title: "Professional Certifications | World Impact Africa",
-    description: "Industry-relevant professional certification programmes with training-based and exam-only pathways across Africa.",
+    title: "Elderly & Companion Care | Tomlee Home Care",
+    description: "Certified elderly care and companion care programmes with trained and vetted care professionals.",
     url: `${base}/certifications`,
-    images: [{ url: "/wialogoicon.png", width: 512, height: 512, alt: "World Impact Africa" }],
+    images: [{ url: "/logo.png", width: 1280, height: 478, alt: "Tomlee Home Care" }],
   },
   twitter: {
-    title: "Professional Certifications | World Impact Africa",
-    description: "Industry-relevant professional certification programmes with training-based and exam-only pathways.",
-    images: ["/wialogoicon.png"],
+    title: "Elderly & Companion Care | Tomlee Home Care",
+    description: "Certified elderly care and companion care programmes with trained and vetted care professionals.",
+    images: ["/logo.png"],
   },
 };
 
 const certSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Professional Certification Programmes",
-  description: "Industry-relevant professional certification programmes across business, technology, finance, and leadership.",
-  url: "https://worldimpactafrica.com/certifications",
+  name: "Elderly & Companion Care Programmes",
+  description: "Certified elderly care and companion care programmes delivered by trained and vetted care professionals.",
+  url: "https://tomleehomecare.ng/certifications",
   itemListElement: [
-    { "@type": "ListItem", position: 1, item: { "@type": "Course", name: "Certified Project Management Professional", provider: { "@type": "Organization", name: "World Impact Africa" } } },
-    { "@type": "ListItem", position: 2, item: { "@type": "Course", name: "Certified Business Analyst", provider: { "@type": "Organization", name: "World Impact Africa" } } },
-    { "@type": "ListItem", position: 3, item: { "@type": "Course", name: "Certified Digital Marketing Specialist", provider: { "@type": "Organization", name: "World Impact Africa" } } },
-    { "@type": "ListItem", position: 4, item: { "@type": "Course", name: "Certified Data Analyst", provider: { "@type": "Organization", name: "World Impact Africa" } } },
-    { "@type": "ListItem", position: 5, item: { "@type": "Course", name: "Certified HR Business Partner", provider: { "@type": "Organization", name: "World Impact Africa" } } },
-    { "@type": "ListItem", position: 6, item: { "@type": "Course", name: "Certified Financial Analyst", provider: { "@type": "Organization", name: "World Impact Africa" } } },
+    { "@type": "ListItem", position: 1, item: { "@type": "Course", name: "Elderly Companion Care", provider: { "@type": "Organization", name: "Tomlee Home Care" } } },
+    { "@type": "ListItem", position: 2, item: { "@type": "Course", name: "Live-in Care Professional", provider: { "@type": "Organization", name: "Tomlee Home Care" } } },
+    { "@type": "ListItem", position: 3, item: { "@type": "Course", name: "Dementia & Memory Support Care", provider: { "@type": "Organization", name: "Tomlee Home Care" } } },
+    { "@type": "ListItem", position: 4, item: { "@type": "Course", name: "Post-Surgical Recovery Care", provider: { "@type": "Organization", name: "Tomlee Home Care" } } },
+    { "@type": "ListItem", position: 5, item: { "@type": "Course", name: "Advanced Personal Care Assistant", provider: { "@type": "Organization", name: "Tomlee Home Care" } } },
   ],
 };
 
