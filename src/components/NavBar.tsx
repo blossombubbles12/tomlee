@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Home, HeartHandshake, Info, ShieldCheck, UserRound, Phone } from "lucide-react";
+import { ChevronDown, Home, HeartHandshake, Info, ShieldCheck, UserRound, Phone, X } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
 
@@ -256,6 +256,13 @@ export default function NavBar() {
                         className="fixed inset-0 z-[60] bg-white flex flex-col overflow-y-auto">
                         <div className="container mx-auto flex items-center justify-between h-[76px] shrink-0 px-4 sm:px-8">
                             <Image src="/logo.png" alt="Tomlee Home Care" width={1280} height={478} style={{ height: 40 }} className="block w-auto object-contain" />
+                            <button
+                                onClick={() => setMobileOpen(false)}
+                                aria-label="Close menu"
+                                className="lg:hidden relative w-11 h-11 rounded-full border border-secondary/10 bg-white flex items-center justify-center hover:border-secondary/25 transition-colors duration-200"
+                            >
+                                <X size={20} className="text-secondary" />
+                            </button>
                         </div>
 
                         <div className="container mx-auto flex-1 py-2 px-4 sm:px-8">
