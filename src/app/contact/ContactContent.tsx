@@ -134,8 +134,8 @@ export default function ContactContent() {
                   <div className="w-9 h-9 bg-primary/10 flex items-center justify-center shrink-0">
                     <Phone size={16} className="text-primary" />
                   </div>
-                  <a href="tel:+2347070579947" className="text-sm text-text/85 hover:text-primary transition-colors">
-                    +234 707 057 9947
+                  <a href="tel:+14049997936" className="text-sm text-text/85 hover:text-primary transition-colors">
+                    +1 404-999-7936
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
@@ -143,7 +143,7 @@ export default function ContactContent() {
                     <MapPin size={16} className="text-primary" />
                   </div>
                   <span className="text-sm text-text/85 leading-relaxed">
-                    198 BnB Mall, Ibeju-Lekki,<br />Lagos, Nigeria
+                    Lawrenceville, GA 30044, USA
                   </span>
                 </li>
               </ul>
@@ -205,7 +205,7 @@ export default function ContactContent() {
                       </label>
                       <input id="phone" name="phone" type="tel" value={form.phone}
                         onChange={handleChange} onBlur={handleBlur}
-                        className={inputClass("phone")} placeholder="+234 ... (optional)" />
+                        className={inputClass("phone")} placeholder="+1 404 ... (optional)" />
                     </div>
                   </div>
 

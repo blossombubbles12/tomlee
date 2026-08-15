@@ -201,11 +201,11 @@ export default function NavBar() {
 
                     {/* CTA + phone + hamburger */}
                     <div className="flex items-center gap-3 sm:gap-5 ml-auto lg:ml-12">
-                        <a href="tel:+2347070579947" className="hidden xl:inline-flex items-center gap-2.5 text-sm font-medium text-secondary hover:text-primary-dark transition-colors" aria-label="Call Tomlee Home Care">
+                        <a href="tel:+14049997936" className="hidden xl:inline-flex items-center gap-2.5 text-sm font-medium text-secondary hover:text-primary-dark transition-colors" aria-label="Call Tomlee Home Care">
                             <span className="w-9 h-9 rounded-full bg-tint flex items-center justify-center text-primary-dark">
                                 <Phone size={15} strokeWidth={1.5} />
                             </span>
-                            +234 707 057 9947
+                            +1 404-999-7936
                         </a>
                         <Link href="/get-started"
                             className="group inline-flex items-center gap-3 bg-primary text-secondary text-sm font-heading font-semibold px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-full tracking-wide hover:bg-primary-dark hover:text-white hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] shadow-card">
@@ -326,9 +326,9 @@ export default function NavBar() {
 
                         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
                             className="container mx-auto pb-10 shrink-0 px-4 sm:px-8">
-                            <a href="tel:+2347070579947"
+                            <a href="tel:+14049997936"
                                 className="flex items-center justify-center gap-3 w-full text-center bg-tint text-secondary py-4 font-heading font-semibold text-sm tracking-wide rounded-full mb-4 transition-colors duration-200 hover:bg-secondary hover:text-white">
-                                <Phone size={16} strokeWidth={1.5} /> +234 707 057 9947
+                                <Phone size={16} strokeWidth={1.5} /> +1 404-999-7936
                             </a>
                             <Link href="/get-started" onClick={() => setMobileOpen(false)}
                                 className="group/cta flex items-center justify-center gap-3 w-full text-center bg-primary hover:bg-primary-dark text-secondary hover:text-white py-4 font-heading font-semibold text-sm tracking-wide rounded-full transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-[0.98]">

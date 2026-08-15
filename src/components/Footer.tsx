@@ -103,15 +103,15 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+2347070579947" className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-primary transition-colors duration-200">
+                <a href="tel:+14049997936" className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-primary transition-colors duration-200">
                   <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
                     <Phone size={12} className="text-primary" />
                   </span>
-                  +234 707 057 9947
+                  +1 404-999-7936
                 </a>
               </li>
               <li className="text-sm text-white/70 leading-relaxed">
-                198 BnB Mall, Ibeju-Lekki,<br />Lagos, Nigeria
+                Lawrenceville, GA 30044, USA
               </li>
             </ul>
             <h5 className="text-[10px] font-semibold tracking-[0.25em] text-white/45 uppercase mb-3">
