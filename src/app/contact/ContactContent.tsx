@@ -126,8 +126,8 @@ export default function ContactContent() {
                   <div className="w-9 h-9 bg-primary/10 flex items-center justify-center shrink-0">
                     <Mail size={16} className="text-primary" />
                   </div>
-                  <a href="mailto:info@tomleehomecare.ng" className="text-sm text-text/85 hover:text-primary transition-colors">
-                    info@tomleehomecare.ng
+                  <a href="mailto:info@tomleehomecare.com" className="text-sm text-text/85 hover:text-primary transition-colors">
+                    info@tomleehomecare.com
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -165,7 +165,7 @@ export default function ContactContent() {
                   {status === "error" && (
                     <div className="bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
                       Something went wrong. Please try again or email us directly at{" "}
-                      <a href="mailto:info@tomleehomecare.ng" className="underline">info@tomleehomecare.ng</a>.
+                      <a href="mailto:info@tomleehomecare.com" className="underline">info@tomleehomecare.com</a>.
                     </div>
                   )}
 

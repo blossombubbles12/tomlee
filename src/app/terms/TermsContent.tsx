@@ -40,7 +40,7 @@ export default function TermsContent() {
 
                 <section>
                     <h2 className="text-lg font-heading font-semibold text-primary mb-3">7. Contact</h2>
-                    <p>For queries: <a href="mailto:info@tomleehomecare.ng" className="text-secondary hover:underline">info@tomleehomecare.ng</a></p>
+                    <p>For queries: <a href="mailto:info@tomleehomecare.com" className="text-secondary hover:underline">info@tomleehomecare.com</a></p>
                 </section>
 
                 <p className="text-text/60 text-sm">Last Updated: January 2026</p>

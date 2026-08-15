@@ -11,13 +11,13 @@ export async function GET() {
     }
 
     await registerAdmin(
-      "admin@tomleehomecare.ng",
+      "admin@tomleehomecare.com",
       "Super Admin",
       "Admin@2026",
       "superadmin"
     );
 
-    return NextResponse.json({ success: true, message: "Super admin created: admin@tomleehomecare.ng / Admin@2026" });
+    return NextResponse.json({ success: true, message: "Super admin created: admin@tomleehomecare.com / Admin@2026" });
   } catch (err) {
     console.error("[Seed Error]", err);
     return NextResponse.json({ error: "Seed failed" }, { status: 500 });

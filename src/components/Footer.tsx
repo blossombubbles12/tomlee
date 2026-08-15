@@ -98,8 +98,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4 mb-8">
               <li>
-                <a href="mailto:info@tomleehomecare.ng" className="text-sm text-white/70 hover:text-primary transition-colors duration-200 break-all">
-                  info@tomleehomecare.ng
+                <a href="mailto:info@tomleehomecare.com" className="text-sm text-white/70 hover:text-primary transition-colors duration-200 break-all">
+                  info@tomleehomecare.com
                 </a>
               </li>
               <li>
